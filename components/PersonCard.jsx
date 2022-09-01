@@ -1,5 +1,4 @@
-import Button from 'react-bootstrap/Button';
-import Card from 'react-bootstrap/Card';
+import { Card } from 'react-bootstrap';
 
 function PersonCard({key, name, description}) {
   const image = require('public/brian-rahadi.jpeg')

@@ -1,15 +1,32 @@
 import Head from "next/head";
 import Image from "next/image";
-import PersonCard from 'components/PersonCard'
+import EventCard from 'components/EventCard'
 import{ Container } from 'react-bootstrap'
-import people from 'data/people.json'
+import { Fade } from 'react-awesome-reveal';
+import pastEvents from 'data/pastEvents.json';
+import upcomingEvents from 'data/upcomingEvents.json'
 
 export default function Team() {
   return (
-    <Container>
-      <h2 style={{textAlign: 'center'}}>SFUIA Events</h2>
-      
+    <Fade>
+      <Container>
+        <h2>Upcoming Events</h2>
+        {upcomingEvents.map(({id, title, text, imgSrc, date}) => {
+          return (
+            <EventCard key={id} title={title} text={text} imgSrc={imgSrc} date={new Date(date)}/>
+          )
+        })}
 
-    </Container>
+      </Container>
+      <Container>
+        <h2>Past Events</h2>
+        {pastEvents.map(({id, title, text, imgSrc, date}) => {
+          return (
+            <EventCard key={id} title={title} text={text} imgSrc={imgSrc} date={new Date(date)}/>
+          )
+        })}
+      </Container>
+
+    </Fade>
   )
 }
