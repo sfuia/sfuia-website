@@ -8,7 +8,7 @@ function NavbarComponent() {
 
 
   return (
-    <Navbar bg="light" expand="lg">
+    <Navbar className="navbar" bg="light" expand="lg" style={{position: 'fixed', top: '0'}}>
       <Container>
         <Navbar.Brand href="/">
           <Image style={{ mixBlendMode: 'multiply'}} src='/sfuia-logo.jpeg' width="100%" height="50%"></Image>
@@ -21,7 +21,7 @@ function NavbarComponent() {
             <Nav.Link href="/team">Team</Nav.Link>
 
 
-            {/* <NavDropdown title="Posts" id="basic-nav-dropdown">
+            <NavDropdown title="Posts" id="basic-nav-dropdown">
               <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
               <NavDropdown.Item href="#action/3.2">
                 Another action
@@ -31,7 +31,7 @@ function NavbarComponent() {
               <NavDropdown.Item href="#action/3.4">
                 Separated link
               </NavDropdown.Item>
-            </NavDropdown> */}
+            </NavDropdown>
           </Nav>
         </Navbar.Collapse>
       </Container>

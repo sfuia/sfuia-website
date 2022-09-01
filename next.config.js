@@ -4,7 +4,7 @@ const nextConfig = {
   reactStrictMode: true,
   swcMinify: true,
   images: {
-    domains: ['educationsnapshots.com', "farm8.staticflickr.com"],
+    domains: ['educationsnapshots.com'],
     formats: ['image/webp', 'image/avif']
   },
   sassOptions: {

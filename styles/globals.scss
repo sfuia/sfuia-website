@@ -5,7 +5,7 @@ body {
   padding: 0;
   margin: 0;
   font-family: 'DynaPuff', cursive;
-  background-color: #E8F9FD;
+  background-color: #850E35;
 }
 
 a {
@@ -17,6 +17,15 @@ a {
   box-sizing: border-box;
 }
 
+.navbar {
+  width: 100%;
+  z-index: 2;
+}
+
+main {
+  margin-top: 5.28em;
+  min-height: 100vh;
+}
 h1 {
   font-size: 5em;
 }

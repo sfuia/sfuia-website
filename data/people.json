@@ -1,16 +1,16 @@
 [
   { "id": 1, "name": "Myckland Matthew", "description": "President" },
   { "id": 2, "name": "Carolina Dewi", "description": "Vice President" },
-  { "id": 3, "name": "Brian", "description": "Secretary" },
-  { "id": 4, "name": "Brian", "description": "Treasurer" },
-  { "id": 5, "name": "Brian", "description": "Events Director" },
-  { "id": 6, "name": "Brian", "description": "Events Coordinator" },
-  { "id": 7, "name": "Brian", "description": "Events Coordinator" },
-  { "id": 8, "name": "Brian", "description": "Logistics Director" },
-  { "id": 9, "name": "Brian", "description": "Logistics Coordinator" },
-  { "id": 10, "name": "Brian", "description": "Logistics Coordinator" },
-  { "id": 11, "name": "Brian", "description": "Social Media Director" },
-  { "id": 12, "name": "Brian", "description": "Web Lead" },
-  { "id": 13, "name": "Brian", "description": "Web Coordinator" },
-  { "id": 14, "name": "Brian", "description": "Web Coordinator" }
+  { "id": 3, "name": "Veja Soedjiono", "description": "Secretary" },
+  { "id": 4, "name": "Lavelawati Poetrie", "description": "Treasurer" },
+  { "id": 5, "name": "Andrew Tandiono", "description": "Events Director" },
+  { "id": 6, "name": "Muhammad Iman", "description": "Events Coordinator" },
+  { "id": 7, "name": "Tjong Daniel", "description": "Events Coordinator" },
+  { "id": 8, "name": "Julian Juan", "description": "Logistics Director" },
+  { "id": 9, "name": "Matthew Daevin", "description": "Logistics Coordinator" },
+  { "id": 10, "name": "Jesslyn Devina", "description": "Logistics Coordinator" },
+  { "id": 11, "name": "Ashlyn Budiman", "description": "Social Media Director" },
+  { "id": 12, "name": "Brian Rahadi", "description": "Web Lead" },
+  { "id": 13, "name": "Filipo Marcellino", "description": "Web Coordinator" },
+  { "id": 14, "name": "Christoper Albert", "description": "Web Coordinator" }
 ]
