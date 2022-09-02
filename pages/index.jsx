@@ -2,45 +2,17 @@ import Head from "next/head";
 import Image from "next/image";
 import styles from "../styles/home.module.scss";
 import { Container, Carousel } from "react-bootstrap";
-import {Fade, Slide } from "react-awesome-reveal";
+import { Fade, Slide } from "react-awesome-reveal";
+import Banner from "components/Banner";
 
 export default function Home() {
   return (
     <div>
       {/* Start of Landing Image */}
-      <div className="navbar-overlay">
-        <div
-          className="image-container"
-          style={{ height: "100vh", width: "100%", position: "relative" }}
-        >
-          <Fade triggerOnce>
-            <Image
-              src="https://educationsnapshots.com/wp-content/uploads/sites/4/2021/09/simon-fraser-university-burnaby-plaza-renewal-12.jpg"
-              layout="fill"
-              objectFit="cover"
-              margin="auto"
-            ></Image>
-          </Fade>
-        </div>
-        <Carousel.Caption
-          style={{ top: "50%", bottom: "50%", color: "black" }}
-          className="animated fadeInDown"
-        >
-          <h1
-            className="carousel-title"
-            style={{
-              zIndex: "100",
-              fontSize: "4em",
-            }}
-          >
-            <Fade delay={200} triggerOnce>
-              <span style={{ background: "rgba(204, 204, 204, 0.8)" }}>
-                Simon Fraser University Indonesian Association
-              </span>
-            </Fade>
-          </h1>
-        </Carousel.Caption>
-      </div>
+      <Banner
+        imageSrc="https://educationsnapshots.com/wp-content/uploads/sites/4/2021/09/simon-fraser-university-burnaby-plaza-renewal-12.jpg"
+        text="Simon Fraser University Indonesian Association"
+      />
       {/* End of Landing Image */}
 
       {/* Start of About Us */}
@@ -73,7 +45,7 @@ export default function Home() {
             </div>
           </Slide>
         </div>
-      </Container >
+      </Container>
       {/* End of About Us */}
     </div>
   );
