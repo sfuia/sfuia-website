@@ -5,7 +5,6 @@ import { Container, Nav, Navbar} from 'react-bootstrap'
 function NavbarComponent() {
   return (
     <Navbar
-      background
       className="navbar"
       bg="light"
       expand="lg"
