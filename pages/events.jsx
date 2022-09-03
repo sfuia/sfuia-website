@@ -14,6 +14,7 @@ export default function Team() {
         <Banner
           imageSrc="/sfuia-olympics.jpeg"
           text="Events"
+          height="50"
         />
         <Container>
           <h2>Upcoming Events</h2>

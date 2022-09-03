@@ -2,6 +2,7 @@ import Container from "react-bootstrap/Container";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
 import Image from "next/image";
+import FooterBrand from "./FooterBrand";
 
 function Footer() {
   return (
@@ -17,25 +18,21 @@ function Footer() {
           style={{
             display: "flex",
             justifyContent: "center",
+            alignItems: "center",
             flexDirection: "row",
+            height:"30px"
           }}
         >
-          <Navbar.Brand target="_blank" href="https://www.instagram.com/sfuia/">
-            <Image
-              src="/instagram.svg"
-              alt="Instagram Logo"
-              width={25}
-              height={25}
-            />
-          </Navbar.Brand>
-          <Navbar.Brand target="_blank" href="mailto:sfu.indonesia@gmail.com">
-            <Image
-              src="/envelope.svg"
-              alt="Envelope Logo"
-              width={25}
-              height={25}
-            />
-          </Navbar.Brand>
+          <FooterBrand
+            href="https://www.instagram.com/sfuia/"
+            src="/instagram.svg"
+            alt="Instagram Logo"
+          />
+          <FooterBrand
+            href="mailto:sfu.indonesia@gmail.com"
+            src="/envelope.svg"
+            alt="Envelope Logo"
+          />
         </div>
 
         <Navbar.Text>
