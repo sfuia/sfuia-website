@@ -16,7 +16,7 @@ export default function Team() {
           text="Events"
           height="50"
         />
-        <Container>
+        <Container styles={{textAlign: 'center'}}>
           <h2>Upcoming Events</h2>
           {upcomingEvents.map(({ id, title, text, imgSrc, date }) => {
             return (
