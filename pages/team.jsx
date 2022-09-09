@@ -7,25 +7,63 @@ import { Fade, Slide } from "react-awesome-reveal";
 import people from "data/people.json";
 
 export default function Team() {
+  // // {for (const key in people) {
+  //   console.log(Object.keys(people)
+  //   )
+  // }}
+  // const section = [];
+  // for (let i = 0; i < people.length; i++) {
+  //   section.push(Object.keys(people[i]))
+  // }
+  const rows = [];
+  for (let i = 0; i < people.length; i++) {
+    let teamName = Object.keys(people[i]);
+
+    let peopleInTeam = people[i][teamName].map(({ id, name, description }) => {
+      return (
+        <Fade key={id} triggerOnce>
+          <PersonCard  name={name} description={description} />
+        </Fade>
+      );
+    })
+    rows.push(<div style={{
+      display: "flex",
+      justifyContent: "center",
+      flexWrap: "wrap",
+      flexDirection: "row"
+    }}
+    >{peopleInTeam}</div>)
+  }
+
+  // for (let i = 0; i )
   return (
     <div>
       <Banner imageSrc="/sfuia-team.jpeg" text="Team" height="50" />
       <Container>
-        <h2 style={{ textAlign: "center" }}>SFUIA 2022/2023 Team</h2>
+        <h1 style={{ textAlign: "center" }}>SFUIA 2022/2023 Team</h1>
         <div
           style={{
             display: "flex",
             justifyContent: "center",
             flexWrap: "wrap",
+            flexDirection: "column"
           }}
         >
-          {people.map(({ id, name, description }) => {
+          {people.map((currElement, index) => {
             return (
-              <Fade key={id} triggerOnce>
-                <PersonCard  name={name} description={description} />
+              <Fade triggerOnce key={index}>
+                <div style={{backgroundColor: 'rgba(255, 122, 89, 0.2)', margin: '3em 0 3em', border: '1em solid pink', borderRadius: '15%'}}>
+                  <h2 style={{textAlign: "center"}}>{Object.keys(people[index])}</h2>
+                  <div>
+                    {rows[index]}
+                    </div>
+                </div>
               </Fade>
-            );
-          })}
+
+            )
+            
+          })
+          }
         </div>
       </Container>
     </div>

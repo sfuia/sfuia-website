@@ -16,9 +16,10 @@ export default function Team() {
           text="Events"
           height="50"
         />
-        <Container styles={{textAlign: 'center'}}>
+        <Container style={{textAlign: 'center', display: 'flex', justifyContent: 'center', alignItems: 'center', flexDirection: 'column', margin: '3em auto'}}>
           <h2>Upcoming Events</h2>
-          {upcomingEvents.map(({ id, title, text, imgSrc, date }) => {
+          <div>
+            {upcomingEvents.map(({ id, title, text, imgSrc, date }) => {
             return (
               <EventCard
                 key={id}
@@ -29,8 +30,9 @@ export default function Team() {
               />
             );
           })}
+          </div>
         </Container>
-        <Container>
+        <Container style={{textAlign: 'center', display: 'flex', justifyContent: 'center', alignItems: 'center', flexDirection: 'column', margin: '3em auto'}}>
           <h2>Past Events</h2>
           {pastEvents.map(({ id, title, text, imgSrc, date }) => {
             return (
