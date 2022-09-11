@@ -8,7 +8,7 @@ const PersonCard = ({ key, name, description }) => {
   return (
     <Card
       style={{
-        width: "18rem",
+        width: "15rem",
         display: "inline-block",
         margin: "1.5em",
         flexShrink: "0",

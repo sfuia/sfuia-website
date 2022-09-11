@@ -1,13 +1,14 @@
 import Image from "next/image";
 import { Carousel } from "react-bootstrap";
 import {Fade } from "react-awesome-reveal";
+import styles from '../styles/banner.module.scss'
 
 const Banner = ({imageSrc, text, height}) => {
   return (
     <div className="banner">
       <div
-        className="image-container"
-        style={{ height: height + "vh", width: "100%", position: "relative" }}
+        className={styles.imageContainer}
+        style={{ height: height + "vh", width: "100%"}}
       >
         <Fade triggerOnce>
           <Image
@@ -23,11 +24,7 @@ const Banner = ({imageSrc, text, height}) => {
         style={{ top: 0.5 * height + "%", color: "white" }}
       >
         <h1
-          className="carousel-title"
-          style={{
-            zIndex: "100",
-            fontSize: "4em",
-          }}
+          className={styles.carouselTitle}
         >
           <Fade delay={350} triggerOnce>
             <span >
