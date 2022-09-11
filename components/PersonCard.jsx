@@ -21,7 +21,7 @@ const PersonCard = ({ key, name, description }) => {
         variant="top"
         src={
           isHovered
-            ? "https://brianrahadi.github.io/brian-rahadi.jpg"
+            ? "/sfuia-logo.jpeg"
             : "/sfuia-about.jpeg"
         }
         height="350"

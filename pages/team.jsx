@@ -38,7 +38,7 @@ export default function Team() {
   // for (let i = 0; i )
   return (
     <div>
-      <Banner imageSrc="/sfuia-team.jpeg" text="Team" height="50" />
+      <Banner imageSrc="/sfuia-welcomeparty-team.jpeg" text="Team" height="50" />
       <Container>
         <h1 style={{ textAlign: "center" }}>SFUIA 2022/2023 Team</h1>
         <div
