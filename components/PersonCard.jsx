@@ -12,6 +12,7 @@ const PersonCard = ({ key, name, description }) => {
         display: "inline-block",
         margin: "1.5em",
         flexShrink: "0",
+        boxShadow: '5px 3px 10px black'
       }}
       key={key}
       onMouseEnter={() => setHover(true)}

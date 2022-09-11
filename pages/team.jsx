@@ -30,7 +30,7 @@ export default function Team() {
       display: "flex",
       justifyContent: "center",
       flexWrap: "wrap",
-      flexDirection: "row"
+      flexDirection: "row",
     }}
     >{peopleInTeam}</div>)
   }
