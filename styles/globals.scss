@@ -3,11 +3,11 @@ body {
   padding: 0;
   margin: 0;
   font-family: 'DynaPuff', cursive;
-  background-color: #850E35;
+  background-color: #F9F9F9;
 }
 
-a {
-  color: inherit;
+.nav-link, .navbar-text, .navbar-brand {
+  color: #F9F9F9;
   text-decoration: none;
 }
 
@@ -39,6 +39,10 @@ h2 {
 
 h1, h2, h3, p {
   word-break: break-word;
+}
+
+.navbar, .footer {
+  background-color: #A6192E;
 }
 /* @media (prefers-color-scheme: dark) {
   html {

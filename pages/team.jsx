@@ -52,7 +52,7 @@ export default function Team() {
           {people.map((currElement, index) => {
             return (
               <Fade triggerOnce key={index}>
-                <div style={{backgroundColor: 'rgba(255, 122, 89, 0.2)', margin: '3em 0 3em', border: '1em solid pink', borderRadius: '15%'}}>
+                <div style={{backgroundColor: '#A6192E', margin: '2em 0 2em', borderRadius: '15%'}}>
                   <h2 style={{textAlign: "center"}}>{Object.keys(people[index])}</h2>
                   <div>
                     {rows[index]}

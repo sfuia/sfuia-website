@@ -6,7 +6,7 @@ import FooterBrand from "./FooterBrand";
 
 function Footer() {
   return (
-    <Navbar className="navbar" bg="light" expand="lg">
+    <Navbar className="navbar" expand="lg">
       <Container
         style={{
           display: "flex",

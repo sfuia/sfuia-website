@@ -6,15 +6,14 @@ function NavbarComponent() {
   return (
     <Navbar
       className="navbar"
-      bg="light"
+      // bg="light"
       expand="lg"
-      // style={{ position: "fixed", top: "0" }}
     >
       <Container>
         <Navbar.Brand href="/">
           <Image
-            style={{ mixBlendMode: "multiply" }}
-            src="/sfuia-logo.jpeg"
+      
+            src="/sfuia-logo-white.png"
             width="100%"
             height="50%"
           ></Image>
