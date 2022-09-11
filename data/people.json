@@ -9,43 +9,48 @@
   },
   {
     "Events": [
-      { "id": 5, "name": "Andrew Tandiono", "description": "Events Director" },
-      { "id": 6, "name": "Muhammad Iman", "description": "Events Coordinator" },
-      { "id": 7, "name": "Tjong Daniel", "description": "Events Coordinator" }
+      { "id": 5, "name": "Andrew Tandiono", "description": "Event Director" },
+      { "id": 6, "name": "Muhammad Iman", "description": "Event Coordinator" },
+      { "id": 7, "name": "Tjong Daniel", "description": "Event Coordinator" }
     ]
   },
   {
     "Logistics": [
-      { "id": 8, "name": "Julian Juan", "description": "Logistics Director" },
+      { "id": 8, "name": "Julian Juan", "description": "Logistic Director" },
       {
         "id": 9,
         "name": "Matthew Daevin",
-        "description": "Logistics Coordinator"
+        "description": "Logistic Coordinator"
       },
       {
         "id": 10,
+        "name": "Sharon Laij",
+        "description": "Logistic Coordinator"
+      },
+      {
+        "id": 11,
         "name": "Jesslyn Devina",
-        "description": "Logistics Coordinator"
+        "description": "Logistic Coordinator"
       }
     ]
   },
   {
     "Social Media": [
       {
-        "id": 11,
+        "id": 12,
         "name": "Ashlyn Budiman",
         "description": "Social Media Director"
       },
-      { "id": 12, "name": "Brian Rahadi", "description": "Web Lead" },
-      {
-        "id": 13,
-        "name": "Filipo Marcellino",
-        "description": "Web Coordinator"
-      },
+      { "id": 13, "name": "Brian Rahadi", "description": "Webmaster Lead" },
       {
         "id": 14,
+        "name": "Filipo Marcellino",
+        "description": "Webmaster Coordinator"
+      },
+      {
+        "id": 15,
         "name": "Christoper Albert",
-        "description": "Web Coordinator"
+        "description": "Webmaster Coordinator"
       }
     ]
   }
