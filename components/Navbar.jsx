@@ -13,7 +13,7 @@ function NavbarComponent() {
         <Navbar.Brand href="/">
           <Image
       
-            src="/sfuia-logo-white.png"
+            src="/sfuia-logo-white.jpg"
             width="100%"
             height="50%"
           ></Image>
