@@ -4,7 +4,6 @@ import { useState } from "react";
 const PersonCard = ({ key, name, description }) => {
   const [isHovered, setHover] = useState(false);
 
-  const image = require("public/brian-rahadi.jpeg");
   return (
     <Card
       style={{
