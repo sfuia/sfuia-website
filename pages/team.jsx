@@ -22,23 +22,32 @@ export default function Team() {
     let peopleInTeam = people[i][teamName].map(({ id, name, description }) => {
       return (
         <Fade key={id} triggerOnce>
-          <PersonCard  name={name} description={description} />
+          <PersonCard name={name} description={description} />
         </Fade>
       );
-    })
-    rows.push(<div style={{
-      display: "flex",
-      justifyContent: "center",
-      flexWrap: "wrap",
-      flexDirection: "row",
-    }}
-    >{peopleInTeam}</div>)
+    });
+    rows.push(
+      <div
+        style={{
+          display: "flex",
+          justifyContent: "center",
+          flexWrap: "wrap",
+          flexDirection: "row",
+        }}
+      >
+        {peopleInTeam}
+      </div>
+    );
   }
 
   // for (let i = 0; i )
   return (
     <div>
-      <Banner imageSrc="/sfuia-welcomeparty-team.jpeg" text="Team" height="50" />
+      <Banner
+        imageSrc="/sfuia-welcomeparty-team.jpeg"
+        text="Team"
+        height="50"
+      />
       <Container>
         <h1 style={{ textAlign: "center" }}>SFUIA 2022/ 2023 Team</h1>
         <div
@@ -46,24 +55,28 @@ export default function Team() {
             display: "flex",
             justifyContent: "center",
             flexWrap: "wrap",
-            flexDirection: "column"
+            flexDirection: "column",
           }}
         >
           {people.map((currElement, index) => {
             return (
               <Fade triggerOnce key={index}>
-                <div style={{backgroundColor: '#A6192E', margin: '2em 0 2em', borderRadius: '15%'}}>
-                  <h2 style={{textAlign: "center"}}>{Object.keys(people[index])}</h2>
-                  <div>
-                    {rows[index]}
-                    </div>
+                <div
+                  style={{
+                    // backgroundColor: "#A6192E",
+                    border: '1em solid #A6192E',
+                    margin: "2em 0 2em",
+                    // borderRadius: "15%",
+                  }}
+                >
+                  <h2 style={{ textAlign: "center" }}>
+                    {Object.keys(people[index])}
+                  </h2>
+                  <div>{rows[index]}</div>
                 </div>
               </Fade>
-
-            )
-            
-          })
-          }
+            );
+          })}
         </div>
       </Container>
     </div>
