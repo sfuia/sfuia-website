@@ -47,7 +47,7 @@ export default function Home() {
           </Slide>
         </div>
       </Container>
-      <hr></hr>
+      <hr class="divider"></hr>
       <Container className={`${styles.about} ${styles.visMis}`}>
         <div>
           <Slide triggerOnce>

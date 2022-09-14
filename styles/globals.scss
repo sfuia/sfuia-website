@@ -51,7 +51,7 @@ h1, h2, h3, p {
   background-color: var(--red-color);
 }
 
-hr {
+hr.divider {
   width: 80%;
   margin: auto;
   border-top: 0.45em dashed var(--red-color);
