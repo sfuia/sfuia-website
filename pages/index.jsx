@@ -47,6 +47,36 @@ export default function Home() {
           </Slide>
         </div>
       </Container>
+      <Container className={styles.about}>
+        <div>
+          <Slide>
+            <h2>Our vision</h2>
+            <p>To become cohesive and inclusive community at SFU. </p>
+          </Slide>
+        </div>
+      </Container>
+      <Container className={styles.about}>
+        <div>
+          <Slide>
+            <h2>Our Mission</h2>
+            <p>
+              Unite indonesian students at sfu and provide them with an
+              inclusive-fam like community.
+            </p>
+            <br />
+            <p>
+              Provide leadership opportunities and networking skills to
+              strengthen individual’s potential
+            </p>
+            <br />
+            <p>
+              {" "}
+              Create a platform for Indonesian community to gain valuable
+              experiences for the future
+            </p>
+          </Slide>
+        </div>
+      </Container>
       {/* End of About Us */}
     </div>
   );
