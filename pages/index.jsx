@@ -19,7 +19,7 @@ export default function Home() {
       {/* Start of About Us */}
       <Container className={styles.about}>
         <div>
-          <Slide>
+          <Slide triggerOnce>
             <h2>About Us</h2>
             <p>
               Our aim is to gather people and create a friendly community to
@@ -31,7 +31,7 @@ export default function Home() {
           </Slide>
         </div>
         <div className={styles.imageWrapper}>
-          <Slide>
+          <Slide triggerOnce>
             <div>
               <Image
                 src="/sfuia-about.jpeg"
@@ -47,33 +47,31 @@ export default function Home() {
           </Slide>
         </div>
       </Container>
-      <Container className={styles.about}>
+      <hr></hr>
+      <Container className={`${styles.about} ${styles.visMis}`}>
         <div>
-          <Slide>
-            <h2>Our vision</h2>
+          <Slide triggerOnce>
+            <h2>Our Vision</h2>
             <p>To become cohesive and inclusive community at SFU. </p>
           </Slide>
         </div>
-      </Container>
-      <Container className={styles.about}>
         <div>
-          <Slide>
+          <Slide triggerOnce>
             <h2>Our Mission</h2>
-            <p>
-              Unite indonesian students at sfu and provide them with an
-              inclusive-fam like community.
-            </p>
-            <br />
-            <p>
-              Provide leadership opportunities and networking skills to
-              strengthen individual’s potential
-            </p>
-            <br />
-            <p>
-              {" "}
-              Create a platform for Indonesian community to gain valuable
-              experiences for the future
-            </p>
+            <ul>
+              <li>
+                Unite Indonesian students at SFU and provide them with an
+                inclusive family-like community.
+              </li>
+              <li>
+                Provide leadership opportunities and networking skills to
+                strengthen individual’s potential
+              </li>
+              <li>
+                Create a platform for Indonesian community to gain valuable
+                experiences for the future
+              </li>
+            </ul>
           </Slide>
         </div>
       </Container>

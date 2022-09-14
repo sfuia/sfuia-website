@@ -1,3 +1,7 @@
+:root {
+  --red-color: #A6192E;
+}
+
 html,
 body {
   padding: 0;
@@ -44,7 +48,14 @@ h1, h2, h3, p {
 }
 
 .navbar, .footer {
-  background-color: #A6192E;
+  background-color: var(--red-color);
+}
+
+hr {
+  width: 80%;
+  margin: auto;
+  border-top: 0.45em dashed var(--red-color);
+  opacity: 1;
 }
 /* @media (prefers-color-scheme: dark) {
   html {
