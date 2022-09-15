@@ -19,10 +19,10 @@ export default function Team() {
   for (let i = 0; i < people.length; i++) {
     let teamName = Object.keys(people[i]);
 
-    let peopleInTeam = people[i][teamName].map(({ id, name, description }) => {
+    let peopleInTeam = people[i][teamName].map(({ id, name, description, imgSrc }) => {
       return (
         <Fade key={id} triggerOnce>
-          <PersonCard name={name} description={description} />
+          <PersonCard name={name} description={description} imgSrc={imgSrc} />
         </Fade>
       );
     });

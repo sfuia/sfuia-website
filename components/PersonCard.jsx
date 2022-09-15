@@ -1,7 +1,7 @@
 import { Card } from "react-bootstrap";
 import { useState } from "react";
 
-const PersonCard = ({ key, name, description }) => {
+const PersonCard = ({ key, name, description, imgSrc }) => {
   const [isHovered, setHover] = useState(false);
 
   return (
@@ -21,8 +21,8 @@ const PersonCard = ({ key, name, description }) => {
         variant="top"
         src={
           isHovered
-            ? "/sfuia-logo.jpeg"
-            : "/sfuia-about.jpeg"
+            ? (imgSrc == "blank" ? "/team/blank.jpeg" : `/team/${imgSrc}-2.jpeg`)
+            : (imgSrc == "blank" ? "/team/blank.jpeg" : `/team/${imgSrc}-1.jpeg`)
         }
         height="350"
         style={{
