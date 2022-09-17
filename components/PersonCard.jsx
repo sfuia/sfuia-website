@@ -11,27 +11,39 @@ const PersonCard = ({ key, name, description, imgSrc }) => {
         display: "inline-block",
         margin: "1.5em",
         flexShrink: "0",
-        boxShadow: 'rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px'
+        boxShadow:
+          "rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px",
+        border: "3px solid black",
+        textAlign: "center",
+        backgroundColor: "#A6192E",
+        color: "white",
+        fontSize: '1.2em'
       }}
       key={key}
       onMouseEnter={() => setHover(true)}
       onMouseLeave={() => setHover(false)}
     >
+
       <Card.Img
         variant="top"
         src={
           isHovered
-            ? (imgSrc == "blank" ? "/team/blank.jpeg" : `/team/${imgSrc}-2.jpeg`)
-            : (imgSrc == "blank" ? "/team/blank.jpeg" : `/team/${imgSrc}-1.jpeg`)
+            ? imgSrc == "blank"
+              ? "/team/blank.jpeg"
+              : `/team/${imgSrc}-2.jpeg`
+            : imgSrc == "blank"
+            ? "/team/blank.jpeg"
+            : `/team/${imgSrc}-1.jpeg`
         }
         height="350"
         style={{
-          objectFit: "cover"
+          objectFit: "cover",
         }}
       />
-      <Card.Body style={{ textAlign: "center" }}>
+      <Card.Body>
         <Card.Title>{name}</Card.Title>
-        <Card.Text>{description}</Card.Text>
+        <Card.Text style={{marginBottom: '0px'}}>{description}</Card.Text>
+
       </Card.Body>
     </Card>
   );

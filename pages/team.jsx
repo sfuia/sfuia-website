@@ -64,7 +64,7 @@ export default function Team() {
                 <div
                   style={{
                     // backgroundColor: "#A6192E",
-                    border: '1em solid #A6192E',
+                    // border: '1em solid #A6192E',
                     margin: "2em 0 2em",
                     // borderRadius: "15%",
                   }}
