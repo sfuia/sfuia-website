@@ -88,19 +88,19 @@
       {
         "id": 13,
         "name": "Brian Rahadi",
-        "description": "Webmaster Lead",
+        "description": "Web Lead",
         "imgSrc": "brian"
       },
       {
         "id": 14,
         "name": "Filipo Marcellino",
-        "description": "Webmaster Coordinator",
+        "description": "Web Coordinator",
         "imgSrc": "pipo"
       },
       {
         "id": 15,
         "name": "Christoper Albert",
-        "description": "Webmaster Coordinator",
+        "description": "Web Coordinator",
         "imgSrc": "albert"
       }
     ]
