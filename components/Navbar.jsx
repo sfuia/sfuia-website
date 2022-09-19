@@ -9,7 +9,7 @@ function NavbarComponent() {
       // bg="light"
       expand="lg"
     >
-      <Container>
+      <Container style={{fontSize: '1.1em', fontWeight: 'bold'}}>
         <Navbar.Brand href="/">
           <Image
       

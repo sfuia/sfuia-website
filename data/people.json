@@ -1,36 +1,79 @@
 [
   {
     "Core": [
-      { "id": 1, "name": "Myckland Matthew", "description": "President" },
-      { "id": 2, "name": "Carolina Dewi", "description": "Vice President" },
-      { "id": 3, "name": "Veja Soedjiono", "description": "Secretary" },
-      { "id": 4, "name": "Lavelawati Poetrie", "description": "Treasurer" }
+      {
+        "id": 1,
+        "name": "Myckland Matthew",
+        "description": "President",
+        "imgSrc": "myckland"
+      },
+      {
+        "id": 2,
+        "name": "Carolina Dewi",
+        "description": "Vice President",
+        "imgSrc": "carolina"
+      },
+      {
+        "id": 3,
+        "name": "Veja Soedjiono",
+        "description": "Secretary",
+        "imgSrc": "veja"
+      },
+      {
+        "id": 4,
+        "name": "Lave",
+        "description": "Treasurer",
+        "imgSrc": "lave"
+      }
     ]
   },
   {
     "Events": [
-      { "id": 5, "name": "Andrew Tandiono", "description": "Event Director" },
-      { "id": 6, "name": "Muhammad Iman", "description": "Event Coordinator" },
-      { "id": 7, "name": "Tjong Daniel", "description": "Event Coordinator" }
+      {
+        "id": 5,
+        "name": "Andrew Tandiono",
+        "description": "Event Director",
+        "imgSrc": "andrew"
+      },
+      {
+        "id": 6,
+        "name": "Muhammad Iman",
+        "description": "Event Coordinator",
+        "imgSrc": "blank"
+      },
+      {
+        "id": 7,
+        "name": "Tjong Daniel",
+        "description": "Event Coordinator",
+        "imgSrc": "tjong"
+      }
     ]
   },
   {
     "Logistics": [
-      { "id": 8, "name": "Julian Juan", "description": "Logistic Director" },
+      {
+        "id": 8,
+        "name": "Julian Juan",
+        "description": "Logistic Director",
+        "imgSrc": "juan"
+      },
       {
         "id": 9,
         "name": "Matthew Daevin",
-        "description": "Logistic Coordinator"
+        "description": "Logistic Coordinator",
+        "imgSrc": "matthew"
       },
       {
         "id": 10,
         "name": "Sharon Laij",
-        "description": "Logistic Coordinator"
+        "description": "Logistic Coordinator",
+        "imgSrc": "sharon"
       },
       {
         "id": 11,
         "name": "Jesslyn Devina",
-        "description": "Logistic Coordinator"
+        "description": "Logistic Coordinator",
+        "imgSrc": "jesslyn"
       }
     ]
   },
@@ -39,18 +82,26 @@
       {
         "id": 12,
         "name": "Ashlyn Budiman",
-        "description": "Social Media Director"
+        "description": "Social Media Director",
+        "imgSrc": "blank"
       },
-      { "id": 13, "name": "Brian Rahadi", "description": "Webmaster Lead" },
+      {
+        "id": 13,
+        "name": "Brian Rahadi",
+        "description": "Web Lead",
+        "imgSrc": "brian"
+      },
       {
         "id": 14,
         "name": "Filipo Marcellino",
-        "description": "Webmaster Coordinator"
+        "description": "Web Coordinator",
+        "imgSrc": "pipo"
       },
       {
         "id": 15,
         "name": "Christoper Albert",
-        "description": "Webmaster Coordinator"
+        "description": "Web Coordinator",
+        "imgSrc": "albert"
       }
     ]
   }
