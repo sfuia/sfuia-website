@@ -1,18 +1,21 @@
 :root {
-  --red-color: #A6192E;
+  --red-color: #a6192e;
 }
 
 html,
 body {
   padding: 0;
   margin: 0;
-  font-family: 'Roboto', cursive;
+  font-family: "Raleway";
+  font-weight: 400;
   background-image: url("../public/batik-background.webp");
   background-size: 40vw;
 }
 
-.nav-link, .navbar-text, .navbar-brand {
-  color: #F9F9F9;
+.nav-link,
+.navbar-text,
+.navbar-brand {
+  color: #f9f9f9;
   text-decoration: none;
 }
 
@@ -22,6 +25,7 @@ body {
 
 .banner {
   background-color: black;
+  font-family: "Ubuntu";
 }
 
 .navbar {
@@ -43,11 +47,15 @@ h2 {
   font-size: 3em;
 }
 
-h1, h2, h3, p {
+h1,
+h2,
+h3,
+p {
   word-break: break-word;
 }
 
-.navbar, .footer {
+.navbar,
+.footer {
   background-color: var(--red-color);
 }
 

@@ -1,54 +1,53 @@
 .about {
-	width: 100%;
-	position: relative;
-	margin-top: 3em;
-	display: flex;
-	justify-content: space-evenly;
-	align-items: center;
-	text-align: center;
-	gap: 2em;
-	margin: 3em auto 3em;
-
+  width: 100%;
+  position: relative;
+  margin-top: 3em;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  text-align: center;
+  gap: 2em;
+  margin: 3em auto 3em;
 }
 
+.card {
+  background-color: rgb(166, 25, 46);
+}
 .about:first-child {
-	width: 50%;
+  width: 50%;
 }
 
 .imageWrapper {
-	position: relative;
-	width: 80%;
+  position: relative;
+  width: 80%;
 }
 
 .imageWrapper > div {
-	border: 0.5em dotted rgb(33, 37, 41);
-	padding: 1em;
-	position: relative;
+  border: 0.5em dotted rgb(33, 37, 41);
+  padding: 1em;
+  position: relative;
 }
 
 .visMis {
-	align-items: flex-start;
+  align-items: flex-start;
 }
-
 
 // .imageWrapper > div {
 // 	border: 1px solid black;
 // 	box-sizing: content-box;
 // }
 @media screen and (max-width: 992px) {
-	.about {
-		flex-direction: column;
-		justify-content: center;
-		align-items: center;
-	}
+  .about {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
 
-	.about:first-child {
-		width: 85%;
-	}
+  .about:first-child {
+    width: 85%;
+  }
 
-	.imageWrapper {
-		width: 60%;
-	}
-
-
+  .imageWrapper {
+    width: 60%;
+  }
 }
