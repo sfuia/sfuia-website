@@ -20,12 +20,12 @@ export default function Home() {
       <Container className={styles.about}>
         <div>
           <Slide triggerOnce>
-            <div class="card" className={styles.homeCards}>
-              <div class="card-header">
-                <h2 class="card-title">About us</h2>
+            <div className={`card ${styles.homeCards}`}>
+              <div className="card-header">
+                <h2 className="card-title">About us</h2>
               </div>
-              <div class="card-body" >
-                <p class="card-text">
+              <div className="card-body" >
+                <p className="card-text">
                   Our aim is to gather people and create a friendly community to
                   enjoy and connect with. We host events for Indonesian
                   students, ranging from cultural events, sports tournaments to
@@ -57,12 +57,12 @@ export default function Home() {
       <Container className={`${styles.about} ${styles.visMis}`}>
         <div>
           <Slide triggerOnce>
-            <div class="card">
-              <div class="card-header">
-                <h2 class="card-title">Our Vision</h2>
+            <div className="card">
+              <div className="card-header">
+                <h2 className="card-title">Our Vision</h2>
               </div>
-              <div class="card-body">
-                <p class="card-text">
+              <div className="card-body">
+                <p className="card-text">
                   To become cohesive and inclusive community at SFU.
                 </p>
               </div>
@@ -71,12 +71,12 @@ export default function Home() {
         </div>
         <div>
           <Slide triggerOnce>
-            <div class="card">
-              <div class="card-header">
-                <h2 class="card-title">Our Mission</h2>
+            <div className="card">
+              <div className="card-header">
+                <h2 className="card-title">Our Mission</h2>
               </div>
-              <div class="card-body">
-                <p class="card-text">
+              <div className="card-body">
+                <p className="card-text">
                   Unite Indonesian students at SFU and provide them with an
                   inclusive family-like community.
                   <br />
