@@ -17,24 +17,15 @@ const PersonCard = ({ key, name, description, imgSrc }) => {
         textAlign: "center",
         backgroundColor: "#A6192E",
         color: "white",
-        fontSize: '1.2em'
+        fontSize: "1.2em",
       }}
       key={key}
       onMouseEnter={() => setHover(true)}
       onMouseLeave={() => setHover(false)}
     >
-
       <Card.Img
         variant="top"
-        src={
-          isHovered
-            ? imgSrc == "blank"
-              ? "/team/blank.jpeg"
-              : `/team/${imgSrc}-2.jpeg`
-            : imgSrc == "blank"
-            ? "/team/blank.jpeg"
-            : `/team/${imgSrc}-1.jpeg`
-        }
+        src={isHovered ? `/team/${imgSrc}-2.jpeg` : `/team/${imgSrc}-1.jpeg`}
         height="350"
         style={{
           objectFit: "cover",
@@ -42,8 +33,7 @@ const PersonCard = ({ key, name, description, imgSrc }) => {
       />
       <Card.Body>
         <Card.Title>{name}</Card.Title>
-        <Card.Text style={{marginBottom: '0px'}}>{description}</Card.Text>
-
+        <Card.Text style={{ marginBottom: "0px" }}>{description}</Card.Text>
       </Card.Body>
     </Card>
   );
