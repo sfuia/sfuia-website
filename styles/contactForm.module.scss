@@ -1,0 +1,28 @@
+.input{
+    padding:0.5rem; 
+    margin:0.25rem; 
+    width:750px; 
+    background-color:#E2F8FF;
+}
+
+.message{
+    padding:0.5rem; 
+    margin:0.2rem;
+    width:750px; 
+    height:200px; 
+    background-color:#E2F8FF;
+}
+
+.submit{
+    padding:0.5rem;
+    margin:0.2rem;
+}
+
+@media screen and (max-width: 992px) {
+	.input{
+        width: 100%;
+    }
+    .message{
+        width: 100%;
+    }
+}
