@@ -1,16 +1,30 @@
 [
   {
     "id": 1,
-    "title": "SFUIA Welcoming Party",
+    "title": "Welcoming Party",
     "text": "Join us as we welcome incoming SFU and FIC students!",
     "imgSrc": "/sfuia-welcome.jpeg",
+    "place": "SFU Burnaby, WMC2200",
+    "placeLink": "https://goo.gl/maps/wvQVV87dfhGkF5hw9",
     "date": "2022-09-10T22:00:00.000Z"
   },
   {
     "id": 2,
     "title": "SFUIA Olympics",
-    "text": "A sport competitions consisting of basketball and futsal",
-    "imgSrc": "/sfuia-olympics.jpeg",
+    "text": "The biggest SFUIA event of the year where we have basketball and futsal sport competitions.",
+    "imgSrc": "/event-olympics21.jpeg",
+    "place": "SFU Burnaby East and Central Gym",
+    "placeLink": "https://goo.gl/maps/LcudySApYDmmAvyNA",
     "date": "2022-05-22T15:00:00.000Z"
+  },
+  {
+    "id": 3,
+    "title": "Spookfest",
+    "text": "Prepare your tricks or treats, and to the terrifying yet funniest time of the year: our upcoming Halloween Party! Horribly awesome prizes and so much fun awaits you.",
+    "imgSrc": "/event-halloween.png",
+    "place": "Brookmere Park",
+    "placeLink": "https://goo.gl/maps/Je2BvXfdH6N2zCkP7",
+    "date": "2022-10-29T24:00:00.000Z",
+    "registerLink": ""
   }
 ]

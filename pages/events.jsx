@@ -15,7 +15,6 @@ export default function Team() {
     return new Date(date) > new Date();
   });
 
-
   return (
     <div>
       <Fade triggerOnce>
@@ -25,8 +24,7 @@ export default function Team() {
           height="50"
         />
 
-
-        {(upcomingEvents.length > 0) ? (
+        {upcomingEvents.length > 0 ? (
           <Container
             style={{
               textAlign: "center",
@@ -37,24 +35,30 @@ export default function Team() {
               margin: "3em auto",
             }}
           >
-          <h2>Upcoming Events</h2>
-          <div>
-            {upcomingEvents.map(({ id, title, text, imgSrc, date }) => {
-              return (
-                <EventCard
-                  key={id}
-                  title={title}
-                  text={text}
-                  imgSrc={imgSrc}
-                  date={new Date(date)}
-                />
-              );
-            })}
-          </div>
-          </Container>): 
-          (<div></div>)          
-        }
-          
+            <h2>Upcoming Events</h2>
+            <div>
+              {upcomingEvents.map(
+                ({ id, title, text, imgSrc, place, placeLink, date, registerLink }) => {
+                  return (
+                    <EventCard
+                      key={id}
+                      title={title}
+                      text={text}
+                      imgSrc={imgSrc}
+                      place={place}
+                      placeLink={placeLink}
+
+                      date={new Date(date)}
+                      registerLink={registerLink}
+                    />
+                  );
+                }
+              )}
+            </div>
+          </Container>
+        ) : (
+          <div></div>
+        )}
 
         <Container
           style={{
@@ -67,13 +71,16 @@ export default function Team() {
           }}
         >
           <h2>Past Events</h2>
-          {pastEvents.map(({ id, title, text, imgSrc, date }) => {
+
+          {pastEvents.map(({ id, title, text, imgSrc, place, placeLink, date }) => {
             return (
               <EventCard
                 key={id}
                 title={title}
                 text={text}
                 imgSrc={imgSrc}
+                place={place}
+                placeLink={placeLink}
                 date={new Date(date)}
               />
             );

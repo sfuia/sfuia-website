@@ -1,4 +1,3 @@
-
 import Image from "next/image";
 import { Container, Nav, Navbar} from 'react-bootstrap'
 
