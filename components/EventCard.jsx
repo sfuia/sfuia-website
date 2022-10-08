@@ -30,6 +30,7 @@ function EventCard({
             <Button
               href={registerLink}
               variant="danger"
+              rel="noreferrer"
               target="_blank"
               size="lg"
             >
@@ -47,12 +48,12 @@ function EventCard({
         {console.log(placeLink)}
         <Card.Text>
           Place: {place}&nbsp; (
-          <a href={placeLink} target="_blank">
+          <a href={placeLink} target="_blank" rel="noreferrer">
             maps
           </a>
           ) <br />
           Date: {date.toDateString()} <br />
-          Time: {date.toTimeString()} 
+          Time: {date.toTimeString()}
         </Card.Text>
       </Card.Body>
     </Card>
