@@ -7,7 +7,6 @@ export default function Document() {
       <Head>
       <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600&family=Ubuntu:wght@500&display=swap" rel="stylesheet"/>
 
-
         <link rel="shortcut icon" href="/sfuia-wayang.ico" />
       </Head>
       <body>

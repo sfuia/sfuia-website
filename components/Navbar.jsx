@@ -25,6 +25,7 @@ function NavbarComponent() {
             <Nav.Link href="/">Home</Nav.Link>
             <Nav.Link href="/events">Events</Nav.Link>
             <Nav.Link href="/team">Team</Nav.Link>
+            <Nav.Link href="/blog">Blog</Nav.Link>
 
             {/* <NavDropdown title="Posts" id="basic-nav-dropdown">
               <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>

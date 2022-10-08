@@ -3,7 +3,8 @@ import { Carousel } from "react-bootstrap";
 import {Fade } from "react-awesome-reveal";
 import styles from '../styles/banner.module.scss'
 
-const Banner = ({imageSrc, text, height}) => {
+const Banner = ({ imageSrc, text, height}) => {
+
   return (
     <div className="banner">
       <div

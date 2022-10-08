@@ -9,9 +9,11 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@contentful/rich-text-react-renderer": "^15.12.1",
     "@emotion/react": "^11.10.4",
     "@sendgrid/mail": "^7.7.0",
     "bootstrap": "^5.2.0",
+    "date-fns": "^2.29.3",
     "next": "^12.3.1",
     "react": "18.2.0",
     "react-awesome-reveal": "^4.0.1",
