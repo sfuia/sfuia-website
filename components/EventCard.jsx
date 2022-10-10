@@ -45,7 +45,6 @@ function EventCard({
           ""
         )}
         <hr></hr>
-        {console.log(placeLink)}
         <Card.Text>
           Place: {place}&nbsp; (
           <a href={placeLink} target="_blank" rel="noreferrer">

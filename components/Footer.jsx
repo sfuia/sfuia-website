@@ -23,18 +23,23 @@ function Footer() {
         >
           <FooterBrand
             href="https://www.instagram.com/sfuia/"
-            src="/instagram.svg"
+            src="/icons/instagram.svg"
             alt="Instagram Logo"
           />
           <FooterBrand
             href="mailto:sfu.indonesia@gmail.com"
-            src="/envelope.svg"
+            src="/icons/envelope.svg"
+            alt="Envelope Logo"
+          />
+          <FooterBrand
+            href="https://discord.gg/qapgS8x2MC"
+            src="/icons/discord.svg"
             alt="Envelope Logo"
           />
         </div>
 
         <Navbar.Text>
-          Copyright &copy; 2022 SFUIA. All rights Reserved. &emsp;
+          Copyright &copy; 2022 SFUIA. All Rights Reserved.
         </Navbar.Text>
       </Container>
     </Navbar>
