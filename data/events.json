@@ -19,12 +19,12 @@
   },
   {
     "id": 3,
-    "title": "Spookfest",
+    "title": "SFUIA Halloween Party",
     "text": "Prepare your tricks or treats, and to the terrifying yet funniest time of the year: our upcoming Halloween Party! Horribly awesome prizes and so much fun awaits you.",
-    "imgSrc": "/event-halloween.png",
-    "place": "Brookmere Park",
-    "placeLink": "https://goo.gl/maps/Je2BvXfdH6N2zCkP7",
-    "date": "2022-10-30T24:00:00.000Z",
+    "imgSrc": "/event-halloween.jpeg",
+    "place": "Brookmere Party Room at Brookmere Apartment",
+    "placeLink": "https://goo.gl/maps/hKgKaysGR24tQWzk8",
+    "date": "2022-10-30T01:00:00.000Z",
     "registerLink": ""
   }
 ]
