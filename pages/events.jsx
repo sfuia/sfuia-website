@@ -19,7 +19,7 @@ export default function Team() {
     <div>
       <Fade triggerOnce>
         <Banner
-          imageSrc="/sfuia-welcomeparty-all2.jpeg"
+          imageSrc="/sfuia-welcoming-party-all.jpeg"
           text="Events"
           height="50"
         />
