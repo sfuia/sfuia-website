@@ -9,6 +9,7 @@ function EventCard({
   placeLink,
   date,
   registerLink,
+  photoLink,
 }) {
   return (
     <Card className={styles.eventCard}>
@@ -25,6 +26,9 @@ function EventCard({
       />
       <Card.Body>
         <Card.Text>{text}</Card.Text>
+        {/* If event date is upcoming, make button for registration link */}
+        {/* if registration link exists, provide button with link to regist. otherwise, just make TBA button with no link */}
+        {/* If event is past and photoLink exists, provide button with link to google drive photos */}
         {new Date(date) > new Date() ? (
           registerLink ? (
             <Button
@@ -41,9 +45,20 @@ function EventCard({
               Registration Form TBA
             </Button>
           )
+        ) : photoLink ? (
+          <Button
+            href={photoLink}
+            variant="success"
+            rel="noreferrer"
+            target="_blank"
+            size="lg"
+          >
+            Google Drive Photos
+          </Button>
         ) : (
           ""
         )}
+
         <hr></hr>
         <Card.Text>
           Place: {place}&nbsp; (
