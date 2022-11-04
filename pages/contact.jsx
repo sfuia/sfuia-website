@@ -23,7 +23,7 @@ export default function Contact() {
     <div className="contact">
       <Fade triggerOnce>
       <Banner
-        imageSrc="/sfuia-team.jpeg"
+        imageSrc="/sfuia-team2.jpeg"
         text="Contact Us"
         height="50"
       />

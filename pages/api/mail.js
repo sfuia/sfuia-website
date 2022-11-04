@@ -12,7 +12,7 @@ export default function handler(req, res) {
     const subject = `Subject: ${body.subject}`;
 
     const data = {
-        to: '02c.albert@gmail.com',
+        to: 'sfuiasfu@gmail.com',
         from: 'contact@sfuia.com',
         subject: subject,
         text: message,

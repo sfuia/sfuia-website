@@ -44,7 +44,7 @@ export default function Team() {
   return (
     <div>
       <Banner
-        imageSrc="/sfuia-welcomeparty-team.jpeg"
+        imageSrc="/sfuia-halloween-blur.jpeg"
         text="Team"
         height="50"
       />
