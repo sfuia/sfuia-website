@@ -40,6 +40,7 @@ export default function Home() {
           <Slide triggerOnce>
             <div>
               <Image
+                alt="about-us"
                 src="/sfuia-about.jpeg"
                 // layout="intrinsic"
                 // width="510w"

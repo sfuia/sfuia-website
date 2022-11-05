@@ -24,7 +24,7 @@ export default function Contact() {
             
             <Accordion className={styles.accordion} defaultActiveKey="0">
                 <Accordion.Item eventKey="0">
-                    <Accordion.Header className={styles.accHeader}>I'm interested in joining SFUIA as an executive, how do I sign up?</Accordion.Header>
+                    <Accordion.Header className={styles.accHeader}>I&apos;m interested in joining SFUIA as an executive, how do I sign up?</Accordion.Header>
                     <Accordion.Body className={styles.accBody}>
                     SFUIA executives are selected at the end of the summer term, usually around July. There is
                     no exact date for when we are hiring for execs, but you can follow our instagram
@@ -40,19 +40,18 @@ export default function Contact() {
                     </Accordion.Body>
                 </Accordion.Item>
                 <Accordion.Item eventKey="2">
-                    <Accordion.Header>What are some of SFUIA's biggest events that I should keep an eye out for?</Accordion.Header>
+                    <Accordion.Header>What are some of SFUIA&apos;s biggest events that I should keep an eye out for?</Accordion.Header>
                     <Accordion.Body>
-                        The largest SFUIA event that we hold anually is the SFUIA olympics in May. We will be holding
-                        competitions for soccer, basketball and volleyball with grand prizes for winning teams! Another
-                        major event that SFUIA is involved in is FIESTA; a gathering event made in collaboration with
+                        The largest SFUIA event that we hold anually is the SFUIA olympics. We will be holding
+                        competitions for soccer, basketball and volleyball with grand prizes for winning teams! <br></br> Another major event that SFUIA is involved in is FIESTA; a gathering event made in collaboration with
                         GISAU and PERMIKA which aims to bring the taste of Indonesian Food to Vancouver!
                     </Accordion.Body>
                 </Accordion.Item>
-                <Accordion.Item eventKey="2">
+                {/* <Accordion.Item eventKey="2">
                     <Accordion.Header>Are SFUIA events exclusive for SFU students?</Accordion.Header>
                     <Accordion.Body>
                     </Accordion.Body>
-                </Accordion.Item>
+                </Accordion.Item> */}
             </Accordion>
             
             </Container>
