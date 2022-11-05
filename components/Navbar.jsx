@@ -21,10 +21,8 @@ function NavbarComponent() {
             <Nav.Link href="/events">Events</Nav.Link>
             <Nav.Link href="/team">Team</Nav.Link>
             {/* <Nav.Link href="/blog">Blog</Nav.Link> */}
-          </Nav>
-          <Nav>
+            <Nav.Link href="/reference">FAQ</Nav.Link>
             <Nav.Link href="/contact">Contact Us</Nav.Link>
-
           </Nav>
         </Navbar.Collapse>
       </Container>

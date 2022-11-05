@@ -1,0 +1,23 @@
+
+.accordion{
+    max-width: 1500px;
+}
+
+.accordion-button{
+    background-color: red;
+}
+
+.panel-turquoise {
+    border-color:red;
+}
+
+.accordion-body{
+    color:red;
+    text-align: left;
+}
+
+@media screen and (max-width: 992px) {
+    .message{
+        width: 100%;
+    }
+}
