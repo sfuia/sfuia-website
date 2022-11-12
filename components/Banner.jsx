@@ -13,7 +13,7 @@ const Banner = ({ imageSrc, text, height}) => {
       >
         <Fade triggerOnce>
           <Image
-            style={{opacity: '0.6', backgroundColor: 'black'}}
+            style={{opacity: '0.6', backgroundColor: 'black', position: 'absolute', bottom: '0'}}
             alt="banner"
             src={imageSrc}
             layout="fill"
@@ -29,7 +29,7 @@ const Banner = ({ imageSrc, text, height}) => {
           className={styles.carouselTitle}
         >
           <Fade delay={350} triggerOnce>
-            <span >
+            <span class={styles.description}>
               {text}
             </span>
           </Fade>

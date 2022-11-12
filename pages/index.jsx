@@ -10,7 +10,7 @@ export default function Home() {
     <div>
       {/* Start of Landing Image */}
       <Banner
-        imageSrc="https://educationsnapshots.com/wp-content/uploads/sites/4/2021/09/simon-fraser-university-burnaby-plaza-renewal-12.jpg"
+        imageSrc="/halloscream-photo.jpeg"
         text="Simon Fraser University Indonesian Association"
         height="92"
       />
