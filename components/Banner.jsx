@@ -29,7 +29,7 @@ const Banner = ({ imageSrc, text, height}) => {
           className={styles.carouselTitle}
         >
           <Fade delay={350} triggerOnce>
-            <span class={styles.description}>
+            <span>
               {text}
             </span>
           </Fade>
