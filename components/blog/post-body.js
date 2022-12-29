@@ -16,7 +16,7 @@ const customMarkdownOptions = (content) => ({
 export default function PostBody({ content }) {
   return (
     <div>
-      <div style={{fontSize: '1.5em'}}>
+      <div>
         {documentToReactComponents(
           content.json,
           customMarkdownOptions(content)
