@@ -12,11 +12,13 @@ export default function CoverImage({ size, title, url, slug }) {
         'hover:shadow-medium transition-shadow duration-200': slug,
       })}
       src={url}
+      style={{borderRadius: '1em', border: '1px solid black'}}
+
     />
   )
 
   return (
-    <div className="sm:mx-0">
+    <div>
       {slug ? (
         <Link href={`/blog/${slug}`}>
           <a aria-label={title}>{image}</a>
