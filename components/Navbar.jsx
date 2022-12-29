@@ -24,7 +24,7 @@ function NavbarComponent() {
           
           </Nav>
           <Nav>
-            <Nav.Link href="/reference">FAQ</Nav.Link>
+            <Nav.Link href="/faq">FAQ</Nav.Link>
             <Nav.Link href="/contact">Contact Us</Nav.Link>
           </Nav>
         </Navbar.Collapse>
