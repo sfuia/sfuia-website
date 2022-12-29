@@ -13,8 +13,6 @@ export default function Index({ preview, allPosts }) {
       </Head>
       <Banner imageSrc="/team/blank.jpeg" text="Blog" height="50" />
       <Container style={{paddingTop: '5em'}}>
-        {/* <h1 style={{ textAlign: "center" }}>SFUIA Blog</h1> */}
-
         {allPosts.length > 0 && <AllPosts posts={allPosts} />}
       </Container>
     </>
