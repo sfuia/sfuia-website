@@ -15,12 +15,11 @@ export default function PostHeader({ title, coverImage, date, author }) {
           {author && (
             <Avatar
               picture={author.picture}
-              // style={{ width: '100%' }}
             />
           )}
           <div>
-            <h3 className="text-3xl mb-3 leading-snug">{author.name}</h3>
-            <div className="text-lg mb-4">
+            <h3 >{author.name}</h3>
+            <div>
               <DateComponent dateString={date} />
             </div>
           </div>

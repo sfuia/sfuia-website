@@ -6,6 +6,7 @@ import PostBody from '../../components/blog/post-body'
 import PostHeader from '../../components/blog/post-header'
 import { getAllPostsWithSlug, getPostAndMorePosts } from '../api/contentful'
 import PostTitle from '../../components/blog/post-title'
+import styles from '../../styles/post.module.scss'
 
 export default function Post({ post, morePosts, preview }) {
   const router = useRouter()
@@ -15,12 +16,13 @@ export default function Post({ post, morePosts, preview }) {
   }
 
   return (
-      <Container style={{marginTop: '1em', padding: '1.5em', backgroundColor: '#F8F4EA', fontSize: '1em', boxShadow: "rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;"}}>
+      <Container style={{marginTop: '1em', padding: '1.5em', backgroundColor: '#F8F4EA', fontSize: '1em', boxShadow: "rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;"}}
+      >
         {router.isFallback ? (
           <PostTitle>Loading…</PostTitle>
         ) : (
           <>
-            <article>
+            <article >
               <Head>
                 <title>
                   {post.title} | Hello!
