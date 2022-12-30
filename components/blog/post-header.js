@@ -18,7 +18,7 @@ export default function PostHeader({ title, coverImage, date, author }) {
             />
           )}
           <div>
-            <h3 >{author.name}</h3>
+            <h3>{author.name}</h3>
             <div>
               <DateComponent dateString={date} />
             </div>
