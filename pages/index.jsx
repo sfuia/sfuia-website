@@ -4,10 +4,19 @@ import styles from "../styles/home.module.scss";
 import { Container, Carousel } from "react-bootstrap";
 import { Fade, Slide } from "react-awesome-reveal";
 import Banner from "components/Banner";
+import InstaFeed from "components/InstaFeed";
 import { images } from "next.config";
 
 export default function Home({ feed }) {
   const images = feed.data;
+  const Image = (props) => {
+    const { url } = props;
+    return (
+      <div>
+        <img width={"200vw"} height={"200vw"} src={url} />
+      </div>
+    );
+  };
   return (
     <div>
       {/* Start of Landing Image */}
@@ -97,8 +106,7 @@ export default function Home({ feed }) {
       </Container>
 
       <Slide triggerOnce>
-        {/* if(true) {<p>Hello</p>} */}
-        {images &&
+        {/* {images &&
           images.map((image, index) => (
             // {(() => {
             //   if (index % 3 == 0) {
@@ -108,14 +116,23 @@ export default function Home({ feed }) {
             // if(true) {
             <div key={image.id}>
               <img
-                width={"25vw"}
-                height={"25vw"}
+                width={"100vw"}
+                height={"100vw"}
                 src={image.media_url}
                 alt={image.caption}
               />
             </div>
             // }
-          ))}
+          ))} */}
+        <InstaFeed colCount={3} md={3}>
+          {images.length > 0 ? (
+            images.map((image) => (
+              <Image key={image.id} url={image.media_url} />
+            ))
+          ) : (
+            <p>no images</p>
+          )}
+        </InstaFeed>
       </Slide>
     </div>
   );
