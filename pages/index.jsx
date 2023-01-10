@@ -4,8 +4,10 @@ import styles from "../styles/home.module.scss";
 import { Container, Carousel } from "react-bootstrap";
 import { Fade, Slide } from "react-awesome-reveal";
 import Banner from "components/Banner";
+import { images } from "next.config";
 
-export default function Home() {
+export default function Home({ feed }) {
+  const images = feed.data;
   return (
     <div>
       {/* Start of Landing Image */}
@@ -24,7 +26,7 @@ export default function Home() {
               <div className="card-header">
                 <h2 className="card-title">About us</h2>
               </div>
-              <div className="card-body" >
+              <div className="card-body">
                 <p className="card-text">
                   Our aim is to gather people and create a friendly community to
                   enjoy and connect with. We host events for Indonesian
@@ -54,6 +56,7 @@ export default function Home() {
           </Slide>
         </div>
       </Container>
+      {/* End of About Us */}
       <hr className="divider"></hr>
       <Container className={`${styles.about} ${styles.visMis}`}>
         <div>
@@ -92,7 +95,40 @@ export default function Home() {
           </Slide>
         </div>
       </Container>
-      {/* End of About Us */}
+
+      <Slide triggerOnce>
+        {/* if(true) {<p>Hello</p>} */}
+        {images &&
+          images.map((image, index) => (
+            // {(() => {
+            //   if (index % 3 == 0) {
+            //     return (<div className="row">);
+            //   }
+            // })()}
+            // if(true) {
+            <div key={image.id}>
+              <img
+                width={"25vw"}
+                height={"25vw"}
+                src={image.media_url}
+                alt={image.caption}
+              />
+            </div>
+            // }
+          ))}
+      </Slide>
     </div>
   );
 }
+
+export const getStaticProps = async () => {
+  const url = `https://graph.instagram.com/me/media?fields=id,caption, media_url, timestamp, media_type, permalink&access_token=${process.env.INSTAGRAM_KEY}`;
+  const data = await fetch(url);
+  const feed = await data.json();
+
+  return {
+    props: {
+      feed
+    }
+  };
+};
