@@ -39,7 +39,7 @@ function Footer() {
         </div>
 
         <Navbar.Text>
-          Copyright &copy; 2022 SFUIA. All Rights Reserved.
+          Copyright &copy; {new Date().getUTCFullYear() } SFUIA. All Rights Reserved.
         </Navbar.Text>
       </Container>
     </Navbar>
