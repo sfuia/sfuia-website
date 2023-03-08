@@ -1,11 +1,21 @@
 import Head from "next/head";
 import Image from "next/image";
 import styles from "../styles/home.module.scss";
+import EventCard from "components/EventCard";
 import { Container, Carousel } from "react-bootstrap";
 import { Fade, Slide } from "react-awesome-reveal";
 import Banner from "components/Banner";
+import events from "data/events.json";
 
 export default function Home() {
+  let upcomingEvents = events
+    .filter(({ date }) => {
+      return new Date(date) > new Date();
+    })
+    .sort((eventA, eventB) => {
+      return new Date(eventB.date) - new Date(eventA.date);
+    });
+
   return (
     <div>
       {/* Start of Landing Image */}
@@ -16,6 +26,54 @@ export default function Home() {
       />
       {/* End of Landing Image */}
 
+      {upcomingEvents.length > 0 ? (
+        <Slide>
+          <Container
+            style={{
+              textAlign: "center",
+              display: "flex",
+              justifyContent: "center",
+              alignItems: "center",
+              flexDirection: "column",
+              margin: "3em auto",
+              border: "0.5em dotted rgb(166, 25, 46)",
+              padding: "1em",
+            }}
+          >
+            <h2>Upcoming Events</h2>
+            <div>
+              {upcomingEvents.map(
+                ({
+                  id,
+                  title,
+                  text,
+                  imgSrc,
+                  place,
+                  placeLink,
+                  date,
+                  registerLink,
+                }) => {
+                  return (
+                    <EventCard
+                      key={id}
+                      title={title}
+                      text={text}
+                      imgSrc={imgSrc}
+                      place={place}
+                      placeLink={placeLink}
+                      date={new Date(date)}
+                      registerLink={registerLink}
+                    />
+                  );
+                }
+              )}
+            </div>
+          </Container>
+        </Slide>
+      ) : (
+        <></>
+      )}
+
       {/* Start of About Us */}
       <Container className={styles.about}>
         <div>
@@ -24,7 +82,7 @@ export default function Home() {
               <div className="card-header">
                 <h2 className="card-title">About us</h2>
               </div>
-              <div className="card-body" >
+              <div className="card-body">
                 <p className="card-text">
                   Our aim is to gather people and create a friendly community to
                   enjoy and connect with. We host events for Indonesian

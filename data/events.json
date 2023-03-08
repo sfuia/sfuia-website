@@ -10,9 +10,9 @@
   },
   {
     "id": 2,
-    "title": "SFUIA Olympics",
+    "title": "SFUIA Olympics 2022",
     "text": "The biggest SFUIA event of the year where we have basketball and futsal sport competitions.",
-    "imgSrc": "/event-olympics21.jpeg",
+    "imgSrc": "/event-olympics22.jpeg",
     "place": "SFU Burnaby East and Central Gym",
     "placeLink": "https://goo.gl/maps/LcudySApYDmmAvyNA",
     "date": "2022-05-22T15:00:00.000Z"
@@ -27,5 +27,15 @@
     "date": "2022-10-30T00:00:00.000Z",
     "registerLink": "https://forms.gle/UdYaRRSmAAkGp8k9A",
     "photoLink": "https://drive.google.com/drive/folders/1Iryg6AA316RuYcXkIc7KbUejWxc5Jsrf"
+  },
+  {
+    "id": 4,
+    "title": "SFUIA Olympics 2023",
+    "text": "Shoot for the hoop or strike the ball! Join us in SFUIA's annual thrilling basketball and futsal competition",
+    "imgSrc": "/event-olympics23.jpeg",
+    "place": "SFU Burnaby East and Central Gym",
+    "placeLink": "https://goo.gl/maps/LcudySApYDmmAvyNA",
+    "date": "2023-03-25T15:00:00.000Z",
+    "registerLink": "https://p9xxbj66dgb.typeform.com/to/LFufx8R0"
   }
 ]
