@@ -24,6 +24,7 @@ export const EmbedSocialWidget = () => {
         className="feed-powered-by-es feed-powered-by-es-feed-new"
         href="https://embedsocial.com/social-media-aggregator/"
         target="_blank"
+        rel="noreferrer"
         title="Widget by EmbedSocial"
       >
         SFU SSSS Instagram Feed
