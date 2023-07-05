@@ -17,7 +17,7 @@ export const EmbedSocialWidget = () => {
 
   return (
     <div
-      class="embedsocial-hashtag"
+      className="embedsocial-hashtag"
       data-ref="fa400b108e0a1ad9d0e4ceb5d1a7e026d5067ca3"
     >
       <a
