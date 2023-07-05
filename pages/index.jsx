@@ -6,6 +6,7 @@ import { Container, Carousel } from "react-bootstrap";
 import { Fade, Slide } from "react-awesome-reveal";
 import Banner from "components/Banner";
 import events from "data/events.json";
+import { EmbedSocialWidget } from "components/EmbedSocialWidget";
 
 export default function Home() {
   let upcomingEvents = events
@@ -151,6 +152,11 @@ export default function Home() {
         </div>
       </Container>
       {/* End of About Us */}
+
+      
+      <Container>
+        <EmbedSocialWidget/>
+      </Container>
     </div>
   );
 }
