@@ -2,11 +2,12 @@ import Head from "next/head";
 import Image from "next/image";
 import styles from "../styles/home.module.scss";
 import EventCard from "components/EventCard";
-import { Container, Carousel } from "react-bootstrap";
+import { Container, Card } from "react-bootstrap";
 import { Fade, Slide } from "react-awesome-reveal";
 import Banner from "components/Banner";
 import events from "data/events.json";
 import { EmbedSocialWidget } from "components/EmbedSocialWidget";
+import EventCarousel from "components/EventCarousel";
 
 export default function Home() {
   let upcomingEvents = events
@@ -79,34 +80,29 @@ export default function Home() {
       <Container className={styles.about}>
         <div>
           <Slide triggerOnce>
-            <div className={`card ${styles.homeCards}`}>
-              <div className="card-header">
-                <h2 className="card-title">About us</h2>
-              </div>
-              <div className="card-body">
-                <p className="card-text">
-                  Our aim is to gather people and create a friendly community to
+            <Card style={{ width:'24rem',height:"20rem" , backgroundColor:"ghostwhite"}}>
+              <Card.Body>
+                <Card.Title style={{fontSize:"2rem"}}>About Us</Card.Title>
+                <Card.Text>
+                Our aim is to gather people and create a friendly community to
                   enjoy and connect with. We host events for Indonesian
                   students, ranging from cultural events, sports tournaments to
                   social gatherings. Come and join us, we are here to make your
-                  experience memorable.{" "}
-                </p>
-              </div>
-            </div>
+                  experience memorable.
+                </Card.Text>
+                <Card.Link href="/">Our Team</Card.Link>
+              </Card.Body>
+            </Card>
           </Slide>
         </div>
         <div className={styles.imageWrapper}>
           <Slide triggerOnce>
-            <div>
+            <div max-width="16rem" max-height="16rem">
               <Image
                 alt="about-us"
                 src="/sfuia-about.jpeg"
-                // layout="intrinsic"
-                // width="510w"
-                // height="384w"
-                width="100%"
-                height="100%"
-                layout="responsive"
+                width={368}
+                height={368}
                 objectFit="cover"
               ></Image>
             </div>
@@ -117,42 +113,42 @@ export default function Home() {
       <Container className={`${styles.about} ${styles.visMis}`}>
         <div>
           <Slide triggerOnce>
-            <div className="card">
-              <div className="card-header">
-                <h2 className="card-title">Our Vision</h2>
-              </div>
-              <div className="card-body">
-                <p className="card-text">
-                  To become cohesive and inclusive community at SFU.
-                </p>
-              </div>
-            </div>
+            <Card style={{ width: '24rem',height:"20rem" , backgroundColor:"ghostwhite"}}>
+              <Card.Body>
+                <Card.Title style={{fontSize:"2rem"}}>Vision</Card.Title>
+                  <Card.Text>
+                    To create a more active and engaging environment for Indonesian students,
+                    fostering their success at SFU.
+                  </Card.Text>
+              </Card.Body>
+            </Card>
           </Slide>
         </div>
         <div>
           <Slide triggerOnce>
-            <div className="card">
-              <div className="card-header">
-                <h2 className="card-title">Our Mission</h2>
-              </div>
-              <div className="card-body">
-                <p className="card-text">
-                  Unite Indonesian students at SFU and provide them with an
-                  inclusive family-like community.
-                  <br />
-                  Provide leadership opportunities and networking skills to
-                  strengthen individual’s potential
-                  <br />
-                  Create a platform for Indonesian community to gain valuable
-                  experiences for the future
-                </p>
-              </div>
-            </div>
+            <Card style={{ width: '24rem',height:"20rem" , backgroundColor:"ghostwhite"}}>
+              <Card.Body >
+                <Card.Title style={{fontSize:"2rem"}}>Mision</Card.Title>
+                  <Card.Text>
+                    To empower students by providing them valuable organizational experience,
+                    fostering personal growth, and honing their working skills
+                    <br /><br />
+                    Inspire students to cultivate stronger bonds within the community through the
+                    creation of breathtaking and engaging activities
+                  </Card.Text>
+              </Card.Body>
+            </Card>
           </Slide>
         </div>
       </Container>
       {/* End of About Us */}
 
+      <Container>
+        <h2>Current events</h2>
+        <EventCarousel/>
+      </Container>
+
+      
       
       <Container>
         <EmbedSocialWidget/>
