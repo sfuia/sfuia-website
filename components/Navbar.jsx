@@ -10,17 +10,17 @@ function NavbarComponent() {
       expand="lg"
     >
       <Container style={{ fontSize: "1.1em", fontWeight: "bold" }}>
-        <Navbar.Brand href="/">
+        <Navbar.Brand href="./">
           <Image src="/sfuia-logo-white.jpg" alt="logo" width="100%" height="50%"></Image>
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
 
         <Navbar.Collapse id="responsive-navbar-nav">
           <Nav className="me-auto">
-            <Nav.Link href="/">Home</Nav.Link>
-            <Nav.Link href="/events">Events</Nav.Link>
-            <Nav.Link href="/team">Team</Nav.Link>
-            <Nav.Link href="/blog">Blog</Nav.Link>
+            <Nav.Link href="./">Home</Nav.Link>
+            <Nav.Link href="./events">Events</Nav.Link>
+            <Nav.Link href="./team">Team</Nav.Link>
+            <Nav.Link href="./blog">Blog</Nav.Link>
           
           </Nav>
           <Nav>
