@@ -49,7 +49,7 @@ export default function Team() {
         height="50"
       />
       <Container>
-        <h1 style={{ textAlign: "center" }}>SFUIA 2022/ 2023 Team</h1>
+        <h1 style={{ textAlign: "center", marginTop: "1rem" }}>SFUIA 2023 / 2024 Team</h1>
         <div
           style={{
             display: "flex",
