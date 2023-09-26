@@ -3,27 +3,27 @@
     "Core": [
       {
         "id": 1,
-        "name": "Myckland Matthew",
+        "name": "Iman",
         "description": "President",
-        "imgSrc": "myckland"
+        "imgSrc": "iman"
       },
       {
         "id": 2,
-        "name": "Carolina Dewi",
+        "name": "Julian",
         "description": "Vice President",
-        "imgSrc": "carolina"
+        "imgSrc": "julian"
       },
       {
         "id": 3,
-        "name": "Veja Soedjiono",
+        "name": "Kania",
         "description": "Secretary",
-        "imgSrc": "veja"
+        "imgSrc": "kania"
       },
       {
         "id": 4,
-        "name": "Nisa",
+        "name": "Sharon",
         "description": "Treasurer",
-        "imgSrc": "nisa"
+        "imgSrc": "sharon"
       }
     ]
   },
@@ -31,77 +31,151 @@
     "Events": [
       {
         "id": 5,
-        "name": "Andrew Tandiono",
+        "name": "Nisa",
         "description": "Event Director",
-        "imgSrc": "andrew"
+        "imgSrc": "nisa"
       },
       {
         "id": 6,
-        "name": "Muhammad Iman",
+        "name": "Owen",
         "description": "Event Coordinator",
-        "imgSrc": "iman"
+        "imgSrc": "owen"
       },
       {
         "id": 7,
-        "name": "Tjong Daniel",
+        "name": "Richelle",
         "description": "Event Coordinator",
-        "imgSrc": "tjong"
+        "imgSrc": "richelle"
+      },
+      {
+        "id": 8,
+        "name": "Nicolle",
+        "description": "Event Coordinator",
+        "imgSrc": "nicolle"
       }
     ]
   },
   {
     "Logistics": [
       {
-        "id": 8,
-        "name": "Julian Juan",
-        "description": "Logistic Director",
-        "imgSrc": "juan"
-      },
-      {
         "id": 9,
-        "name": "Matthew Daevin",
-        "description": "Logistic Coordinator",
-        "imgSrc": "matthew"
+        "name": "Daevin",
+        "description": "Logistic Director",
+        "imgSrc": "daevin"
       },
       {
         "id": 10,
-        "name": "Sharon Laij",
-        "description": "Logistic Coordinator",
-        "imgSrc": "sharon"
+        "name": "Ariel",
+        "description": "Logistic Lead",
+        "imgSrc": "ariel"
       },
       {
         "id": 11,
-        "name": "Jesslyn Devina",
+        "name": "Glenn",
         "description": "Logistic Coordinator",
+        "imgSrc": "glenn"
+      },
+      {
+        "id": 12,
+        "name": "Eagan",
+        "description": "F&B Coordinator",
+        "imgSrc": "eagan"
+      },
+      {
+        "id": 13,
+        "name": "Bella",
+        "description": "F&B Coordinator",
+        "imgSrc": "bella"
+      }
+    ]
+  },
+  {
+    "Marketing":[
+      {
+        "id": 14,
+        "name": "Patricia",
+        "description": "Marketing Director",
+        "imgSrc": "patricia"
+      },
+      {
+        "id": 15,
+        "name": "Bruce",
+        "description": "Marketing Coordinator",
+        "imgSrc": "bruce"
+      }, {
+        "id": 16,
+        "name": "Franklin",
+        "description": "Marketing Coordinator",
+        "imgSrc": "franklin"
+      }, {
+        "id": 17,
+        "name": "Nathan",
+        "description": "Marketing Coordinator",
+        "imgSrc": "nathan"
+      }, {
+        "id": 18,
+        "name": "Debora",
+        "description": "Marketing Coordinator",
+        "imgSrc": "debora"
+      }
+    ]
+  },
+  {
+    "Finance":[
+      {
+        "id": 19,
+        "name": "Calvin",
+        "description": "Finance Director",
+        "imgSrc": "calvin"
+      },
+      {
+        "id": 20,
+        "name": "Nicole",
+        "description": "Finance Coordinator",
+        "imgSrc": "nicole"
+      }, {
+        "id": 21,
+        "name": "Abi",
+        "description": "Finance Coordinator",
+        "imgSrc": "abi"
+      }, {
+        "id": 22,
+        "name": "Farrel",
+        "description": "Sponsorship Coordinator",
+        "imgSrc": "farrel"
+      }, {
+        "id": 23,
+        "name": "Jesslyn",
+        "description": "Sponsorship Coordinator",
         "imgSrc": "jesslyn"
       }
     ]
   },
   {
-    "Social Media": [
+    "Design": [
       {
-        "id": 12,
-        "name": "Ashlyn Budiman",
-        "description": "Social Media Director",
+        "id": 24,
+        "name": "Ashlyn",
+        "description": "Visual Media Director",
         "imgSrc": "ashlyn"
       },
       {
-        "id": 13,
-        "name": "Brian Rahadi",
+        "id": 25,
+        "name": "Albert",
         "description": "Web Lead",
-        "imgSrc": "brian"
-      },
-      {
-        "id": 14,
-        "name": "Filipo Marcellino",
-        "description": "Web Coordinator",
-        "imgSrc": "pipo"
-      },
-      {
-        "id": 15,
-        "name": "Christoper Albert",
-        "description": "Web Coordinator",
         "imgSrc": "albert"
+      },
+      {
+        "id": 26,
+        "name": "Della",
+        "description": "Visual Media Coordinator",
+        "imgSrc": "della"
+      },
+      {
+        "id": 27,
+        "name": "Jeslyn",
+        "description": "Coordinator",
+        "imgSrc": "jeslyn"
       }
     ]
   }
