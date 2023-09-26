@@ -25,7 +25,8 @@ const PersonCard = ({ key, name, description, imgSrc }) => {
     >
       <Card.Img
         variant="top"
-        src={isHovered ? `/team/${imgSrc}-2.jpeg` : `/team/${imgSrc}-1.jpeg`}
+        // src={isHovered ? `/team/23-24/${imgSrc}-2.jpeg` : `/team/23-24/${imgSrc}.jpeg`}
+        src={`/team/23-24/${imgSrc}.jpeg`}
         height="350"
         style={{
           objectFit: "cover",
@@ -33,7 +34,7 @@ const PersonCard = ({ key, name, description, imgSrc }) => {
       />
       <Card.Body>
         <Card.Title>{name}</Card.Title>
-        <Card.Text style={{ marginBottom: "0px" }}>{description}</Card.Text>
+        <Card.Text style={{ marginBottom: "0px", fontSize: "medium"}}>{description}</Card.Text>
       </Card.Body>
     </Card>
   );
