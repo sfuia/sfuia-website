@@ -17,6 +17,7 @@ const Banner = ({ imageSrc, text, height}) => {
             alt="banner"
             src={imageSrc}
             layout="fill"
+            max-height="500"
             objectFit="cover"
             margin="auto"
           ></Image>

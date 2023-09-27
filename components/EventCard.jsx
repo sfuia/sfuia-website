@@ -1,5 +1,6 @@
 import { Button, Card } from "react-bootstrap";
 import styles from "../styles/eventcard.module.scss";
+import Container from "react-bootstrap";
 
 function EventCard({
   title,
@@ -12,6 +13,7 @@ function EventCard({
   photoLink,
 }) {
   return (
+    <div className={styles.eventContainer}>
     <Card className={styles.eventCard}>
       <Card.Header>{title}</Card.Header>
       <Card.Img
@@ -22,6 +24,7 @@ function EventCard({
           height: "10em",
           objectFit: "fill",
           backgroundColor: "black",
+           cursor: "pointer"
         }}
       />
       <Card.Body>
@@ -41,7 +44,9 @@ function EventCard({
               Registration Form
             </Button>
           ) : (
-            <></>
+            <Button variant="secondary" size="lg" disabled>
+              Registration Form TBA
+            </Button>
           )
         ) : photoLink ? (
           <Button
@@ -69,6 +74,7 @@ function EventCard({
         </Card.Text>
       </Card.Body>
     </Card>
+    </div>
   );
 }
 
