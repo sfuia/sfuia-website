@@ -41,9 +41,7 @@ function EventCard({
               Registration Form
             </Button>
           ) : (
-            <Button variant="secondary" size="lg" disabled>
-              Registration Form TBA
-            </Button>
+            <></>
           )
         ) : photoLink ? (
           <Button

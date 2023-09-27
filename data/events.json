@@ -37,5 +37,14 @@
     "placeLink": "https://goo.gl/maps/18gRntU6cqj1m9R96",
     "date": "2023-03-25T15:00:00.000Z",
     "registerLink": "https://tally.so/r/nW2PaN"
+  },
+  {
+    "id": 5,
+    "title": "LEMPER",
+    "text": "Let's Meet in Person! Join us at SFUIA's LEMPER Welcoming Party",
+    "imgSrc": "/event-lemper.jpeg",
+    "place": "KJRI, 1630 Alberni St",
+    "placeLink": "https://maps.app.goo.gl/r4zJvjVi1CiwnFNU6",
+    "date": "2023-09-30T19:00:00.000Z"
   }
 ]
