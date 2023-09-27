@@ -13,7 +13,7 @@ const Banner = ({ imageSrc, text, height}) => {
       >
         <Fade triggerOnce>
           <Image
-            style={{opacity: '0.6', backgroundColor: 'black', position: 'absolute', bottom: '0'}}
+            style={{opacity: '0.3', backgroundColor: 'black', position: 'absolute', bottom: '0'}}
             alt="banner"
             src={imageSrc}
             layout="fill"
