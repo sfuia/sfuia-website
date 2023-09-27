@@ -8,7 +8,7 @@ export default function Index({ preview, allPosts }) {
 
   return (
     <>
-      <Banner imageSrc="/team/blank.jpeg" text="Blog" height="50" />
+      <Banner imageSrc="/team/22-23/blank.jpeg" text="Blog" height="50" />
       <Container style={{paddingTop: '5em'}}>
         {allPosts.length > 0 && <AllPosts posts={allPosts} />}
       </Container>
