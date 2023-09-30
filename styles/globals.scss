@@ -1,8 +1,10 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 :root {
   --red-color: #a6192e;
 }
-
-
 
 html,
 body {

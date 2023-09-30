@@ -1,26 +1,14 @@
 import Container from "react-bootstrap/Container";
 import Navbar from "react-bootstrap/Navbar";
 import FooterBrand from "./FooterBrand";
+import NewsletterSubscribe from "./newsletter/NewsletterSubscribe";
 
 function Footer() {
   return (
     <Navbar className="navbar" expand="lg">
-      <Container
-        style={{
-          display: "flex",
-          justifyContent: "center",
-          flexDirection: "column",
-        }}
-      >
-        <div
-          style={{
-            display: "flex",
-            justifyContent: "center",
-            alignItems: "center",
-            flexDirection: "row",
-            height:"30px"
-          }}
-        >
+      <Container className="flex justify-content-center flex-col">
+        <NewsletterSubscribe/>
+        <div className="mt-2 flex justify-content-center flex-row">
           <FooterBrand
             href="https://www.instagram.com/sfuia/"
             src="/icons/instagram.svg"
@@ -37,7 +25,6 @@ function Footer() {
             alt="Envelope Logo"
           />
         </div>
-
         <Navbar.Text>
           Copyright &copy; {new Date().getUTCFullYear() } SFUIA. All Rights Reserved.
         </Navbar.Text>

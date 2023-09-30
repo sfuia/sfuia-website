@@ -6,12 +6,8 @@ const FooterBrand = ({ href, src, alt }) => {
   const [size, setSize] = useState(25);
 
   return (
-    <Navbar.Brand target="_blank" href={href}
-
-      >
-      <Image src={src} alt={alt} width={size} height={size} style={{transition: "all 2s"}}
-            onMouseEnter={() => setSize(30)}
-            onMouseLeave={() => setSize(25)}/>
+    <Navbar.Brand target="_blank" href={href} className="hover:scale-125 transform w-8 h-8 transition duration-200">
+      <Image src={src} alt={alt} width={size} height={size}/>
     </Navbar.Brand>
   );
 };
