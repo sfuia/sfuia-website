@@ -82,6 +82,18 @@ jobs:
         with:
           path: ./out
 
+  # Generate env file to workspace
+  generate-env-file:
+      runs-on: ubuntu-latest
+      needs: build
+      steps:
+        - name: Generate .env File
+          run: |
+            echo "CONTENTFUL_ACCESS_TOKEN=${{ secrets.CONTENTFUL_ACCESS_TOKEN }}" >> .env
+            echo "CONTENTFUL_PREVIEW_ACCESS_TOKEN=${{ secrets.CONTENTFUL_PREVIEW_ACCESS_TOKEN }}" >> .env
+            echo "CONTENTFUL_SPACE_ID=${{ secrets.CONTENTFUL_SPACE_ID }}" >> .env
+          working-directory: ${{ github.workspace }}
+          
   # Deployment job
   deploy:
     environment:
@@ -89,10 +101,6 @@ jobs:
       url: https://github.com
     runs-on: ubuntu-latest
     needs: build
-    env:  
-      CONTENTFUL_ACCESS_TOKEN: ${{ secrets.CONTENTFUL_ACCESS_TOKEN }}
-      CONTENTFUL_PREVIEW_ACCESS_TOKEN: ${{ secrets.CONTENTFUL_PREVIEW_ACCESS_TOKEN }} 
-      CONTENTFUL_SPACE_ID: ${{ secrets.CONTENTFUL_SPACE_ID }} 
     steps:
       - name: Deploy to GitHub Pages
         id: deployment
