@@ -152,7 +152,6 @@ export default function Home() {
         </div>
       </Container>
       {/* End of About Us */}
-
       
       <Container>
         <EmbedSocialWidget/>
