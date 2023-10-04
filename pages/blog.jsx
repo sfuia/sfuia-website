@@ -5,8 +5,6 @@ import Head from "next/head";
 import Banner from "components/Banner";
 
 export default function Index({ preview, allPosts }) {
-  console.log("HIII")
-  console.log(`${process.env.CONTENTFUL_SPACE_ID}`)
   return (
     <>
       <Banner imageSrc="/team/22-23/blank.jpeg" text="Blog" height="50" />
