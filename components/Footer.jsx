@@ -7,7 +7,7 @@ function Footer() {
   return (
     <Navbar className="navbar" expand="lg">
       <Container className="flex justify-content-center flex-col">
-        <NewsletterSubscribe/>
+{/*         <NewsletterSubscribe/> */}
         <div className="mt-2 flex justify-content-center flex-row">
           <FooterBrand
             href="https://www.instagram.com/sfuia/"
