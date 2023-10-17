@@ -90,9 +90,10 @@ hr.divider {
   background: var(--red-color);
 }
 
-.rbc-header span{
+.rbc-header{
   font-size: larger;
   color: white;
+  padding: 3rem;
 }
 
 .rbc-day-bg, .rbc-day-slot, .rbc-agenda-view, .rbc-btn-group{
@@ -102,4 +103,15 @@ hr.divider {
 .rbc-toolbar-label{
   font-size:x-large;
   font-weight: bold;
+}
+
+@media screen and (max-width: 850px) {
+	.rbc-toolbar {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .rbc-toolbar-label{
+    margin: .2rem;
+  }
 }

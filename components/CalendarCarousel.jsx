@@ -6,7 +6,7 @@ const CalendarCarousel = () => {
     <Carousel>
       <Carousel.Item>
         <Banner
-          imageSrc="/ig-lemper.jpg"
+          imageSrc="/sports.JPG"
           text="Sports Week"
           height="50"
         />

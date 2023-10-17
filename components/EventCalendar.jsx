@@ -20,15 +20,9 @@ const localizer = dateFnsLocalizer({
 const events = [
   {
     id: 1,
-    title: 'Event 1',
-    start: new Date(2023, 10, 1, 10, 0),
-    end: new Date(2023, 10, 1, 12, 0),
-  },
-  {
-    id: 2,
-    title: 'Event 2',
-    start: new Date(2023, 10, 3, 14, 0),
-    end: new Date(2023, 10, 3, 16, 0),
+    title: 'Golf',
+    start: new Date(2023, 9, 21, 13, 30),
+    end: new Date(2023, 9, 21, 16, 30),
   },
   // Add more events as needed
 ];
