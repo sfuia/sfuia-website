@@ -89,3 +89,17 @@ hr.divider {
 .rbc-header {
   background: var(--red-color);
 }
+
+.rbc-header span{
+  font-size: larger;
+  color: white;
+}
+
+.rbc-day-bg, .rbc-day-slot, .rbc-agenda-view, .rbc-btn-group{
+  background: white;
+}
+
+.rbc-toolbar-label{
+  font-size:x-large;
+  font-weight: bold;
+}
