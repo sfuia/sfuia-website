@@ -21,6 +21,7 @@ function NavbarComponent() {
             <Nav.Link href="./events">Events</Nav.Link>
             <Nav.Link href="./team">Team</Nav.Link>
             <Nav.Link href="./blog">Blog</Nav.Link>
+            <Nav.Link href="./calendar">Calendar</Nav.Link>
           
           </Nav>
           <Nav>

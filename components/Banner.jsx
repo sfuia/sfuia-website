@@ -24,7 +24,7 @@ const Banner = ({ imageSrc, text, height}) => {
         </Fade>
       </div>
       <Carousel.Caption
-        style={{ top: 0.5 * height + "%", color: "white" }}
+        style={{ top: 0.5 * height + "%", color: "white", height:0 }}
       >
         <h1
           className={styles.carouselTitle}
