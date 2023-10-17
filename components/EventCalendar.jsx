@@ -20,7 +20,7 @@ const localizer = dateFnsLocalizer({
 const events = [
   {
     id: 1,
-    title: 'Golf',
+    title: 'Golf @Burnaby Mountain Golf',
     start: new Date(2023, 9, 21, 13, 30),
     end: new Date(2023, 9, 21, 16, 30),
   },
