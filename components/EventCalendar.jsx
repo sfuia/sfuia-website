@@ -54,13 +54,13 @@ export default function EventCalendar(){
   // }, []);
 
   return (
-    <div className='m-16'>
+    <div className='max-w-7xl m-auto'>
       <Calendar
         localizer={localizer}
         events={events}
         startAccessor="start"
         endAccessor="end"
-        style={{ height: 750, margin: '4rem' }}
+        style={{ height: 750, margin: '1rem' }}
         onSelectEvent={handleEventClick}
       />
     </div>
