@@ -2,7 +2,7 @@ import EventCard from "components/EventCard";
 import { Container } from "react-bootstrap";
 import { Fade } from "react-awesome-reveal";
 import events from "data/events.json";
-import EventCarousel from "components/EventCarousel";
+import Banner from "components/Banner";
 
 export default function Team() {
   let pastEvents = events
@@ -24,7 +24,11 @@ export default function Team() {
   return (
     <div>
       <Fade triggerOnce>
-        <EventCarousel></EventCarousel>
+        <Banner
+          imageSrc="/sfuia-welcomeparty-all.jpeg"
+          text="Events"
+          height="50"
+        />
 
         {upcomingEvents.length > 0 ? (
           <Container

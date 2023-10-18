@@ -7,6 +7,7 @@ import { Fade, Slide } from "react-awesome-reveal";
 import Banner from "components/Banner";
 import events from "data/events.json";
 import { EmbedSocialWidget } from "components/EmbedSocialWidget";
+import EventCarousel from "components/EventCarousel";
 
 export default function Home() {
   let upcomingEvents = events
@@ -100,14 +101,12 @@ export default function Home() {
             <div>
               <Image
                 alt="about-us"
-                src="/sfuia-about.jpeg"
-                // layout="intrinsic"
-                // width="510w"
-                // height="384w"
+                src="/team/23-24/our-team.jpg"
                 width="100%"
                 height="100%"
                 layout="responsive"
                 objectFit="cover"
+                className="rounded-md"
               ></Image>
             </div>
           </Slide>
@@ -139,10 +138,10 @@ export default function Home() {
                 <p className="card-text">
                   Unite Indonesian students at SFU and provide them with an
                   inclusive family-like community.
-                  <br />
+                  <br /><br />
                   Provide leadership opportunities and networking skills to
                   strengthen individual’s potential
-                  <br />
+                  <br /><br />
                   Create a platform for Indonesian community to gain valuable
                   experiences for the future
                 </p>
