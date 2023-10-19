@@ -47,5 +47,14 @@
     "placeLink": "https://maps.app.goo.gl/r4zJvjVi1CiwnFNU6",
     "date": "2023-09-30T19:00:00.000Z",
     "registerLink": "https://docs.google.com/forms/d/e/1FAIpQLSdhB2C01z4x840fgddtBRt_IRKWe-cZo_pscro9UwZKZTvQIg/viewform"
+  },
+  {
+    "id": 6,
+    "title": "Sports Week!",
+    "text": "Come play your favorite sports and make some amazing connections on the court!",
+    "imgSrc": "/sports-ticket.png",
+    "place": "The place changes each week, so be sure to check our Calendar!",
+    "date": "2023-10-21T20:30:00.000Z",
+    "registerLink": "https://docs.google.com/forms/d/e/1FAIpQLSdPCbY78ceVVbpvg7fmdSxsocQdtwLWXh9Mig0agR9iURmkNA/viewform?usp=sf_link"
   }
 ]
