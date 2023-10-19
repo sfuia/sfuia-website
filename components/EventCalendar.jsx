@@ -28,8 +28,8 @@ const events = [
 ];
 
 const handleEventClick = (event) => {
-  const discordURL = ("https://discord.com/channels/1019097260988039188/1163680711228784670")
-  window.open(discordURL, '_blank');
+  const eventLink = ("https://docs.google.com/forms/d/e/1FAIpQLSdPCbY78ceVVbpvg7fmdSxsocQdtwLWXh9Mig0agR9iURmkNA/viewform?usp=sf_link")
+  window.open(eventLink, '_blank');
 };
 
 export default function EventCalendar(){
