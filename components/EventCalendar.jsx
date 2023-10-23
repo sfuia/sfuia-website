@@ -24,11 +24,23 @@ const events = [
     start: new Date(2023, 9, 21, 13, 30),
     end: new Date(2023, 9, 21, 16, 30),
   },
-  // Add more events as needed
+  {
+    id: 2,
+    title: 'Gerobak - Bakmi Ayam + Pangsit',
+    start: new Date(2023, 9, 23, 0, 0),
+    end: new Date(2023, 9, 26, 24, 0),
+    color: 'red'
+  },
 ];
 
 const handleEventClick = (event) => {
-  const eventLink = ("https://docs.google.com/forms/d/e/1FAIpQLSdPCbY78ceVVbpvg7fmdSxsocQdtwLWXh9Mig0agR9iURmkNA/viewform?usp=sf_link")
+  let eventLink = ""
+  if (event.id === 1) {
+    // Handle the click for the first event
+    eventLink = "https://docs.google.com/forms/d/e/1FAIpQLSdPCbY78ceVVbpvg7fmdSxsocQdtwLWXh9Mig0agR9iURmkNA/viewform?usp=sf_link";
+  } else if (event.id === 2) {
+    eventLink = "https://docs.google.com/forms/d/e/1FAIpQLSf_mxxN-CAAk3BytESxw2wU01dqBHDcvjJF8gmpeBRt2u_l8A/viewform?usp=pp_url";
+  }
   window.open(eventLink, '_blank');
 };
 

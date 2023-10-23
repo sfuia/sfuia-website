@@ -17,7 +17,7 @@ const EventCarousel = () => {
       </Carousel.Item>
       <Carousel.Item>
       <Banner
-        imageSrc="/ig-lemper-gerobak.jpg"
+        imageSrc="/gerobak-2.png"
         text="Gerobak"
         height="50"
         />
