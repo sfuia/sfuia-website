@@ -9,15 +9,6 @@
     "date": "2022-09-10T22:00:00.000Z"
   },
   {
-    "id": 2,
-    "title": "SFUIA Olympics 2022",
-    "text": "The biggest SFUIA event of the year where we have basketball and futsal sport competitions.",
-    "imgSrc": "/event-olympics22.jpeg",
-    "place": "SFU Burnaby East and Central Gym",
-    "placeLink": "https://goo.gl/maps/LcudySApYDmmAvyNA",
-    "date": "2022-05-22T15:00:00.000Z"
-  },
-  {
     "id": 3,
     "title": "SFUIA Halloween Party",
     "text": "Prepare your tricks or treats, and to the terrifying yet funniest time of the year: our upcoming Halloween Party! Horribly awesome prizes and so much fun awaits you.",
@@ -63,7 +54,17 @@
     "text": "Our food sale ensures you don't miss the taste of home 🇮🇩",
     "imgSrc": "/gerobak-2.png",
     "place": "Pickup at 28-October in SFU Burnaby, Lougheed, New Westminster",
-    "date": "2023-10-25T06:59:59.000Z",
+    "date": "2023-10-26T23:00:00.000Z",
     "registerLink": "https://docs.google.com/forms/d/e/1FAIpQLSf_mxxN-CAAk3BytESxw2wU01dqBHDcvjJF8gmpeBRt2u_l8A/viewform?usp=pp_url"
+  },
+  {
+    "id": 8,
+    "title": "HalloScream",
+    "text": "Our food sale ensures you don't miss the taste of home 🇮🇩",
+    "imgSrc": "/event-halloween-2.png",
+    "place": "Brookmere, Lougheed",
+    "placeLink":"https://maps.app.goo.gl/fPm4sPmkkwvHfBX17r",
+    "date": "2023-11-04T23:00:00.000Z",
+    "registerLink": "https://forms.gle/HDAxvU3cvkaZih3o7"
   }
 ]
