@@ -37,6 +37,12 @@ const events = [
     start: new Date(2023, 10, 11, 14, 0),
     end: new Date(2023, 10, 11, 16, 0),
   },
+  {
+    id: 4,
+    title: 'Gerobak - Soto Betawi + Perkedel',
+    start: new Date(2023, 10, 18, 16, 0),
+    end: new Date(2023, 10, 18, 16, 0),
+  },
 ];
 
 const handleEventClick = (event) => {
@@ -44,7 +50,7 @@ const handleEventClick = (event) => {
   if (event.id % 2 == 0) {
     eventLink = "https://docs.google.com/forms/d/e/1FAIpQLSdPCbY78ceVVbpvg7fmdSxsocQdtwLWXh9Mig0agR9iURmkNA/viewform?usp=sf_link";
   } else{
-    eventLink = "https://docs.google.com/forms/d/e/1FAIpQLSf_mxxN-CAAk3BytESxw2wU01dqBHDcvjJF8gmpeBRt2u_l8A/viewform?usp=pp_url";
+    eventLink = "https://docs.google.com/forms/d/1mXJsFCj9lH4mk4jkizC3mqLYh9CYSvh5HcE7_nrBY70/prefill";
   }
   window.open(eventLink, '_blank');
 };
