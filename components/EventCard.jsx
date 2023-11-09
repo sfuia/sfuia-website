@@ -41,11 +41,11 @@ function EventCard({
               target="_blank"
               size="lg"
             >
-              Registration Form
+              Registration Link
             </Button>
           ) : (
             <Button variant="secondary" size="lg" disabled>
-              Registration Form TBA
+              Registration Link TBA
             </Button>
           )
         ) : photoLink ? (
