@@ -16,7 +16,7 @@ const customMarkdownOptions = (content) => ({
 export default function PostBody({ content }) {
   return (
     <div>
-      <div>
+      <div className='post_heading'> 
         {documentToReactComponents(
           content.json,
           customMarkdownOptions(content)
