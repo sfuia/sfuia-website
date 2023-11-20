@@ -27,7 +27,7 @@ export const EmbedSocialWidget = () => {
         rel="noreferrer"
         title="Widget by EmbedSocial"
       >
-        SFU SSSS Instagram Feed
+        SFUIA Instagram Feed
       </a>
     </div>
   );

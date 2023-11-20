@@ -6,7 +6,6 @@ import PostBody from '../../components/blog/post-body'
 import PostHeader from '../../components/blog/post-header'
 import { getAllPostsWithSlug, getPostAndMorePosts } from '../api/contentful'
 import PostTitle from '../../components/blog/post-title'
-import styles from '../../styles/post.module.scss'
 
 export default function Post({ post, morePosts, preview }) {
   const router = useRouter()
@@ -16,7 +15,7 @@ export default function Post({ post, morePosts, preview }) {
   }
 
   return (
-      <Container style={{marginTop: '1em', borderRadius: '1em', padding: '1.5em', backgroundColor: "rgba(248, 244, 234, 0.85)", fontSize: '1em', boxShadow: "rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;"}}
+      <Container className='max-w-4xl mt-4 rounded p-6 bg-slate-200 text-base shadow'
       >
         {router.isFallback ? (
           <PostTitle>Loading…</PostTitle>
@@ -30,14 +29,15 @@ export default function Post({ post, morePosts, preview }) {
                 <meta property="og:image" content={post.coverImage.url} />
               </Head>
               <PostHeader
+                className="text-red-500"
                 title={post.title}
                 coverImage={post.coverImage}
                 date={post.date}
                 author={post.author}
               />
-                          <hr />
+              <hr />
 
-              <PostBody content={post.content} />
+              <PostBody className="font-black" content={post.content} />
             </article>
      
           </>

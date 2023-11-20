@@ -11,7 +11,7 @@ export default function PostHeader({ title, coverImage, date, author }) {
         <CoverImage title={title} url={coverImage.url} size={4} />
       </div>
       <div>
-        <div style={{ display: "flex", gap: "1em", marginLeft: "1em" }}>
+        <div className="flex gap-4 ml-4">
           {author && (
             <Avatar
               picture={author.picture}
