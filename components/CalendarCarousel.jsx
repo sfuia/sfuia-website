@@ -26,6 +26,17 @@ const CalendarCarousel = () => {
             <p>Stay tooned for GEROBAK's future items! 🍛</p>
           </Carousel.Caption>
       </Carousel.Item>
+      <Carousel.Item>
+      <Banner
+        imageSrc="/esports.png"
+        text="ESports Event"
+        height="50"
+        />
+          <Carousel.Caption>
+            <h3>Don't miss out on your chance to win big!</h3>
+            <p>Join our ESports event and test your skills! 🎮</p>
+          </Carousel.Caption>
+      </Carousel.Item>
     </Carousel>
   );
 };

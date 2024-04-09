@@ -18,16 +18,18 @@ const localizer = dateFnsLocalizer({
 });
 
 const handleEventClick = (event) => {
-  let eventLink = ""
-  console.log(event.title)
-  if (event.title.toLowerCase().includes('gerobak'))
-  {
-    eventLink = "https://docs.google.com/forms/d/1mXJsFCj9lH4mk4jkizC3mqLYh9CYSvh5HcE7_nrBY70/prefill";
-  } else{
-    eventLink = "https://docs.google.com/forms/d/e/1FAIpQLSdPCbY78ceVVbpvg7fmdSxsocQdtwLWXh9Mig0agR9iURmkNA/viewform?usp=sf_link";
-  }
+  let eventLink = event.link
   window.open(eventLink, '_blank');
 };
+
+function getLink (event) {
+  if(event.description == null){
+    return ""
+  }
+  const startIdx = event.description.indexOf('href="') + 6;
+  const endIdx = event.description.indexOf('"', startIdx);
+  return event.description.substring(startIdx, endIdx);
+}
 
 export default function EventCalendar(){
   const calendarID = 'a1be84a17449db9630d39f7be12c710bff12b2cd5f138b05c0ff8027efb22327@group.calendar.google.com'
@@ -42,6 +44,7 @@ export default function EventCalendar(){
         for (const event of data.items) {
           updatedEvents.push({
             title: event.summary,
+            link: getLink(event), 
             start: new Date(event.start.dateTime),
             end: new Date(event.end.dateTime),
           });

@@ -64,13 +64,22 @@ function EventCard({
 
         <hr></hr>
         <Card.Text>
-          Place: {place}&nbsp; (
-          <a href={placeLink} target="_blank" rel="noreferrer">
-            maps
-          </a>
-          ) <br />
-          Date: {date.toDateString()} <br />
-          Time: {date.toTimeString()}
+          Place: {place}&nbsp; 
+            { placeLink ? 
+            <a href={placeLink} target="_blank" rel="noreferrer">
+              (maps)
+            </a>
+            :
+            <a></a>
+            }
+          <br />
+          Date: {
+            date.toDateString()
+          } 
+          <br />
+          Time: {
+            date.getHours() != 0 ? date.toDateString() : "TBD"
+          }
         </Card.Text>
       </Card.Body>
     </Card>

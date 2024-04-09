@@ -66,5 +66,15 @@
     "placeLink":"https://maps.app.goo.gl/fPm4sPmkkwvHfBX17r",
     "date": "2023-11-06T00:00:00.000Z",
     "registerLink": "https://forms.gle/HDAxvU3cvkaZih3o7"
+  },
+  {
+    "id": 8,
+    "title": "SFUIA ESports Registration",
+    "text": "Gather your friends, sharpen your skills, and dive into the ultimate gaming experience!",
+    "imgSrc": "/esports.png",
+    "place": "Online",
+    "placeLink":"",
+    "date": "2024-04-28T07:00:00.000Z",
+    "registerLink": "https://forms.gle/HDAxvU3cvkaZih3o7"
   }
 ]
