@@ -6,18 +6,18 @@ const CalendarCarousel = () => {
     <Carousel>
       <Carousel.Item>
         <Banner
-          imageSrc="/sports.JPG"
+          imageSrc="/esports-fifa.jpg"
           text="Sports Week"
           height="50"
         />
           <Carousel.Caption>
-            <h3>✨ Stay active with SFUIA ✨</h3>
-            <p>Play sports with your fellow students around Vancouver!</p>
+            <h3>🔥Warm up before the upcoming olympics 🔥</h3>
+            <p>⚽ Compete in our fifa event before our upcoming olympic!</p>
           </Carousel.Caption>
       </Carousel.Item>
       <Carousel.Item>
       <Banner
-        imageSrc="/gerobak-4.jpg"
+        imageSrc="/gerobak-5.png"
         text="Gerobak"
         height="50"
         />
@@ -28,13 +28,14 @@ const CalendarCarousel = () => {
       </Carousel.Item>
       <Carousel.Item>
       <Banner
-        imageSrc="/esports.png"
-        text="ESports Event"
+        imageSrc="/event-olympics24.jpg"
+        text="SFIUA Olypmpic 2024"
         height="50"
         />
           <Carousel.Caption>
-            <h3>Don't miss out on your chance to win big!</h3>
-            <p>Join our ESports event and test your skills! 🎮</p>
+            <h3>✨ SFUIA's most anticipated annual event! ✨</h3>
+            <p>🏟️ Join our olympics event and prove that you are among the best</p>
+            <p>Now with basketball, volleyball, futsal, and badminton!</p>
           </Carousel.Caption>
       </Carousel.Item>
     </Carousel>

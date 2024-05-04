@@ -78,7 +78,7 @@ function EventCard({
           } 
           <br />
           Time: {
-            date.getHours() != 0 ? date.toDateString() : "TBD"
+            date.getHours() != 0 ? date.toTimeString() : "TBD"
           }
         </Card.Text>
       </Card.Body>
