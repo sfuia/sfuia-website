@@ -17,7 +17,7 @@ const CalendarCarousel = () => {
       </Carousel.Item>
       <Carousel.Item>
       <Banner
-        imageSrc="/gerobak-5.png"
+        imageSrc="/gerobak-5.jpg"
         text="Gerobak"
         height="50"
         />
