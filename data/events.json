@@ -76,5 +76,24 @@
     "placeLink":"",
     "date": "2024-04-28T07:00:00.000Z",
     "registerLink": "https://forms.gle/54Ee7kp5UPxRtWSd7"
+  },
+  {
+    "id": 9,
+    "title": "SFUIA ESport FIFA",
+    "text": "Warm up before the upcoming olympics with your gaming skils!",
+    "imgSrc": "/esports-fifa.jpg",
+    "place": "Online",
+    "placeLink":"",
+    "date": "2024-05-10T07:00:00.000Z"
+  },
+  {
+    "id": 10,
+    "title": "SFUIA Olympics 2024",
+    "text": "Gather your friends, as SFUIA's annual Olympics is here! Compete in basketball, voleyball, futsal, or badminton!",
+    "imgSrc": "/event-olympics24.jpg",
+    "place": "SFU Burnaby East Gym",
+    "placeLink": "https://goo.gl/maps/18gRntU6cqj1m9R96",
+    "date": "2024-05-10T07:00:00.000Z",
+    "registerLink": "https://forms.gle/y4oGXKmRqByQfErEA"
   }
 ]
